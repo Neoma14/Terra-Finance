@@ -1,0 +1,19 @@
+{
+  "name": "terra-finance-offline",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "prepare": "pnpm --filter @konsultan/shared build",
+    "dev:api": "pnpm --filter @konsultan/api dev",
+    "dev:web": "pnpm --filter @konsultan/web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "migrate:master": "pnpm --filter @konsultan/api exec knex --knexfile src/db/master/knexfile.ts migrate:latest",
+    "generate:license": "pnpm --filter @konsultan/api exec tsx ../../scripts/generate-license.ts",
+    "compute:admin-token": "pnpm --filter @konsultan/api exec tsx ../../scripts/compute-admin-token.ts"
+  }
+}

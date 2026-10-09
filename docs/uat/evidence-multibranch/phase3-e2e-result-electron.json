@@ -1,0 +1,425 @@
+{
+ "runtime": "electron-packaged",
+ "before": {
+  "journals": 12003,
+  "lines": 30976,
+  "accounts": 66
+ },
+ "after": {
+  "journals": 12003,
+  "lines": 30976,
+  "accounts": 66
+ },
+ "results": [
+  {
+   "name": "login pemilik",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "S0014-S0016: tabel override & delegasi (Revisi 5) dibuat, model lama diarsipkan",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "akses perusahaan lama tidak berubah (role/status sama, scope ALL)",
+   "pass": true,
+   "detail": "11 baris"
+  },
+  {
+   "name": "OWNER menyalakan multi-cabang (pada salinan)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "3 cabang dibuat; id cabang perusahaan lain tersedia untuk uji pemalsuan",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "user uji dibuat & login",
+   "pass": true,
+   "detail": "201/200"
+  },
+  {
+   "name": "OWNER menetapkan admin pusat scope ALL (perilaku ADMIN lama)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin LIMITED hanya melihat Metro + Bandar Lampung",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "ADMIN LIMITED tanpa delegasi: mengelola akses cabang ditolak 403 DELEGATION_REQUIRED",
+   "pass": true,
+   "detail": "403 DELEGATION_REQUIRED"
+  },
+  {
+   "name": "ADMIN LIMITED tanpa delegasi: override & daftar pengelolaan & info cabang ditolak",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "delegation.manage hanya OWNER: ADMIN (scope ALL pun) tidak memilikinya",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "ADMIN ALL maupun ADMIN LIMITED tidak dapat membuat delegasi (403)",
+   "pass": true,
+   "detail": "403/403"
+  },
+  {
+   "name": "ADMIN ALL tetap mengelola akses cabang tanpa delegasi (perilaku lama)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OWNER mendelegasikan manage_users (Metro+Bandar Lampung, max_role STAFF)",
+   "pass": true,
+   "detail": "{\"success\":true,\"id\":\"9a5b3949-bfda-43af-9950-675008a5c69a\"}"
+  },
+  {
+   "name": "delegasi terbaca: kapabilitas, max_role, cabang efektif; role tetap ADMIN dan tak punya delegation.manage",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin LIMITED berdelegasi menambah staf ke Metro",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin LIMITED berdelegasi menambah staf ke Bandar Lampung",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "cabang di luar delegasi (Kotabumi, Pusat) ditolak 404 seragam",
+   "pass": true,
+   "detail": "404/404"
+  },
+  {
+   "name": "tidak dapat mengubah akses diri sendiri / memberi scope ALL",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "peran target di atas max_role (ACCOUNTANT > STAFF) ditolak ROLE_EXCEEDS_DELEGATION",
+   "pass": true,
+   "detail": "403 ROLE_EXCEEDS_DELEGATION"
+  },
+  {
+   "name": "staf Metro: akses aktif sebelum dicabut",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "akses dicabut -> request berikutnya (sesi sama) 403 BRANCH_CONTEXT_INVALID",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "akses dicabut -> cabang itu 404 pada URL",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "STAFF bawaan: tidak punya interbranch.approve",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OWNER GRANT interbranch.approve ke staf",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "override berlaku di sesi yang sama; peran tetap STAFF",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OWNER DENY interbranch.approve pada akuntan",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "permission administratif tidak dapat di-override (403 PERMISSION_NOT_OVERRIDABLE)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "tidak dapat DENY pada OWNER",
+   "pass": true,
+   "detail": "403 OWNER_PROTECTED"
+  },
+  {
+   "name": "STAFF tanpa users.manage tidak dapat mengatur override (403)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "VIEWER tidak dapat menerima permission tulis (403 READ_ONLY_ROLE)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin berdelegasi mengatur override user dalam cakupannya",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin berdelegasi: override user di luar cakupan/peran ditolak",
+   "pass": true,
+   "detail": "403 ROLE_EXCEEDS_DELEGATION"
+  },
+  {
+   "name": "pencabutan override berlaku seketika",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pelanggaran batas ditolak: ALL_BRANCH (scopeAll)",
+   "pass": true,
+   "detail": "403 SCOPE_ALL_NOT_ALLOWED"
+  },
+  {
+   "name": "pelanggaran batas ditolak: cabang tidak ada",
+   "pass": true,
+   "detail": "403 BRANCH_OUT_OF_SCOPE"
+  },
+  {
+   "name": "pelanggaran batas ditolak: cabang perusahaan lain",
+   "pass": true,
+   "detail": "403 BRANCH_OUT_OF_SCOPE"
+  },
+  {
+   "name": "pelanggaran batas ditolak: kapabilitas = permission (users.manage)",
+   "pass": true,
+   "detail": "403 CAPABILITY_INVALID"
+  },
+  {
+   "name": "pelanggaran batas ditolak: kapabilitas backup.restore",
+   "pass": true,
+   "detail": "403 CAPABILITY_INVALID"
+  },
+  {
+   "name": "pelanggaran batas ditolak: max_role ADMIN",
+   "pass": true,
+   "detail": "403 MAX_ROLE_INVALID"
+  },
+  {
+   "name": "pelanggaran batas ditolak: max_role OWNER",
+   "pass": true,
+   "detail": "403 MAX_ROLE_INVALID"
+  },
+  {
+   "name": "penerima STAFF ditolak ROLE_NOT_ELIGIBLE",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "ACCOUNTANT + manage_users ditolak CAPABILITY_NOT_APPLICABLE (irisan dengan permission peran)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "delegasi ke OWNER / diri sendiri ditolak",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "delegasi ke user perusahaan lain ditolak (404)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "akses cabang & override ke user perusahaan lain ditolak (404)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "cabang perusahaan A tidak sah dipakai pada delegasi perusahaan B",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "delegasi aktif ganda untuk penerima yang sama ditolak (409)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OWNER mendelegasikan manage_branch_info untuk Metro",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "manage_branch_info: ubah info Metro berhasil",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "manage_branch_info: cabang lain 404, urutan 403, kelola user 403",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "rantai delegasi: penerima delegasi tidak dapat mendelegasikan lagi (403)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "eskalasi peran ditolak: STAFF->ADMIN, ADMIN mengubah OWNER, admin berdelegasi memberi akses OWNER, ADMIN->OWNER",
+   "pass": true,
+   "detail": "403/403/403/403"
+  },
+  {
+   "name": "peran tidak berubah setelah percobaan eskalasi",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pihak tak berwenang tidak dapat mencabut delegasi orang lain (404)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OWNER mencabut delegasi",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "delegasi dicabut -> kewenangan hilang pada request berikutnya (sesi sama): 403 DELEGATION_REQUIRED",
+   "pass": true,
+   "detail": "403 DELEGATION_REQUIRED"
+  },
+  {
+   "name": "delegasi yang sudah dicabut tidak dapat dicabut lagi (404)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "akses cabang penerima dikurangi -> cakupan delegasi menyusut otomatis (Bandar Lampung tertutup)",
+   "pass": true,
+   "detail": "404"
+  },
+  {
+   "name": "daftar user admin berdelegasi tersaring (tanpa OWNER/ACCOUNTANT Kotabumi/ALL)",
+   "pass": true,
+   "detail": "3 user"
+  },
+  {
+   "name": "STAFF tidak dapat membuka daftar pengelolaan (403)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pemilik perusahaan B tidak dapat membaca otorisasi A",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "regresi: Neraca (akun ALL) tetap berfungsi",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "regresi: LIMITED tetap ditolak di laporan (deny-by-default)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "branch-context: daftar cabang + status operasional + konteks tervalidasi server",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "memilih cabang aktif yang sah berhasil dan tersimpan sebagai preferensi server",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "memilih cabang di luar akses ditolak (404) walau UI mengirim id-nya",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "latensi rata-rata /authorization/me < 100 ms (tanpa cache, 60 panggilan)",
+   "pass": true,
+   "detail": "21.4 ms"
+  },
+  {
+   "name": "audit tercatat: user_branch.access_granted",
+   "pass": true,
+   "detail": "8 baris"
+  },
+  {
+   "name": "audit tercatat: user_branch.access_revoked",
+   "pass": true,
+   "detail": "3 baris"
+  },
+  {
+   "name": "audit tercatat: permission_override.created",
+   "pass": true,
+   "detail": "3 baris"
+  },
+  {
+   "name": "audit tercatat: permission_override.revoked",
+   "pass": true,
+   "detail": "1 baris"
+  },
+  {
+   "name": "audit tercatat: delegation.created",
+   "pass": true,
+   "detail": "3 baris"
+  },
+  {
+   "name": "audit tercatat: delegation.revoked",
+   "pass": true,
+   "detail": "1 baris"
+  },
+  {
+   "name": "audit pelanggaran batas tercatat (security.authorization_boundary_denied)",
+   "pass": true,
+   "detail": "13 baris"
+  },
+  {
+   "name": "audit delegasi memuat aktor, target, kapabilitas, max_role, cabang, waktu, alasan",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "audit tanpa password/token/secret",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "multi_branch_enabled hanya menyala pada SALINAN uji ini (data produksi tidak disentuh)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "origin guard: Origin asing ke POST /delegations ditolak 403",
+   "pass": true,
+   "detail": "403"
+  },
+  {
+   "name": "PRAGMA integrity_check & foreign_key_check: system DB",
+   "pass": true,
+   "detail": "{\"integrity\":\"ok\",\"fk\":0}"
+  },
+  {
+   "name": "PRAGMA integrity_check & foreign_key_check: company.db",
+   "pass": true,
+   "detail": "{\"integrity\":\"ok\",\"fk\":0}"
+  },
+  {
+   "name": "data akuntansi tidak berubah oleh Phase 3 (jurnal & baris identik, akun +0)",
+   "pass": true,
+   "detail": "{\"journals\":12003,\"lines\":30976,\"accounts\":66} -> {\"journals\":12003,\"lines\":30976,\"accounts\":66}"
+  }
+ ]
+}

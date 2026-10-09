@@ -1,0 +1,80 @@
+{
+  "name": "TERRA FINANCE - Clean Development Baseline",
+  "status": "CLEAN DEVELOPMENT BASELINE PROMOTED",
+  "promotionDate": "2026-10-08",
+  "workspace": "D:/ABDI/Proyek Aplikasi/Codex/TERRA-FINANCE-CLEAN",
+  "origin": {
+    "description": "P-1 Clean Development Baseline Candidate (staging di scratch sesi), disalin ke folder permanen self-contained",
+    "sourceCandidate": "scratchpad/p1-stage (435 berkas baseline Phase 3 + berkas pendukung terverifikasi)",
+    "historicalBaseline": "docs/baseline/PHASE-3-AUTHORIZATION-BASELINE.md + phase3-authorization-baseline.manifest.json (TIDAK DIUBAH, byte-identik dengan aslinya)",
+    "integrityGateReport": "docs/wip/P-1-FINAL-INTEGRITY-GATE.md (di pohon WIP asli)"
+  },
+  "baselineFiles": {
+    "totalInManifest": 435,
+    "exactHashMatch": 435,
+    "missing": 0,
+    "mismatch": 0,
+    "method": "SHA-256 per berkas terhadap docs/baseline/phase3-authorization-baseline.manifest.json (hash pohon manifest tidak dapat direproduksi: metode tidak terdokumentasi)"
+  },
+  "reconstructedFile": {
+    "path": "apps/api/src/modules/company-search/routes.ts",
+    "sha256": "fc4cd1a3ad0d12609cf91eb53dc0b11ca4377081a22d164e07fd9ec638c6a874",
+    "expectedHistoricalSha256": "fc4cd1a3ad0d12609cf91eb53dc0b11ca4377081a22d164e07fd9ec638c6a874",
+    "match": true,
+    "label": "RECONSTRUCTED PHASE-3 BASELINE FILE (hash historis cocok)"
+  },
+  "buildEvidence": {
+    "apiNonTestJs": "196/196 identik byte-per-byte dengan api/dist installer Phase 3",
+    "apiDistFilesComparedWithInstaller": "393 sama, 0 beda (134 berkas hanya-di-clean = hasil kompilasi berkas tes)",
+    "webDist": "15/15 identik dengan web/dist installer Phase 3"
+  },
+  "validation": {
+    "typecheck": { "api": "0 error", "web": "0 error", "shared": "0 error" },
+    "unitAndIntegrationTests": "827/827 (67 berkas)",
+    "architectureBoundaryEquivalent": "8/8 (apps/api/src/architecture; repo tidak punya script check:boundaries)",
+    "securityE2EEquivalent": "37/37 pada salinan data UAT 5 tahun (repo tidak punya script test:e2e; padanan: e2e-stage dari P-1)",
+    "goldenMaster": "small 43/43; uat-1 126/126; uat-3 126/126; uat-7 126/126 identik (flag OFF)",
+    "buildApi": "OK",
+    "buildWeb": "OK",
+    "phase3Exact82E2E": "TIDAK DAPAT DIREPRODUKSI (skrip historis tidak tersedia)"
+  },
+  "phase5AContamination": {
+    "reportScopeFilesPresent": 0,
+    "executableReferencesToWipSymbols": 0,
+    "note": "apps/api/src/architecture/scope-readiness.test.ts (Phase 5.0, terverifikasi) hanya menyebut 'AuthorizedScope' dalam komentar/label string sebagai penanda tugas 5A; bukan dependensi kode",
+    "filesWhoseHashEqualsWipOnlyHash": 0,
+    "result": "PASS - 0"
+  },
+  "database": {
+    "checkedOn": "salinan backup UAT 5 tahun (produksi/port 4000 tidak disentuh), dimigrasi oleh server hasil build dari folder permanen",
+    "systemMigrations": 16,
+    "masterMigrations": 12,
+    "companyMigrationsEach": 18,
+    "latestCompanyMigration": "C0018_company_audit_branch",
+    "companies": 6,
+    "integrityCheck": "ok (semua)",
+    "foreignKeyCheck": "0 pelanggaran (semua)",
+    "phase5AOrInterBranchMigrations": 0,
+    "interBranchTables": 0
+  },
+  "featureFlag": { "multi_branch_enabled": "OFF (0) di semua 6 perusahaan" },
+  "dependencies": {
+    "installedFrom": "pnpm install --frozen-lockfile --prefer-offline (lockfile & package.json tidak diubah)",
+    "symlinksToWipTree": 0,
+    "selfContained": true
+  },
+  "filesOutsideManifest": {
+    "note": "Berkas pendukung di luar manifest 435 (diklasifikasi di P-1 Final Integrity Gate): 4 berkas tes/golden Phase 5.0; tsconfig/vitest/uat-runner api; konfigurasi & aset web; desktop src/build; pnpm-workspace.yaml; infra; docs/architecture, docs/uat",
+    "uncertain": [
+      "apps/desktop/build/icon.ico, icon-source.png (tidak ada hash pembanding)",
+      "pnpm-workspace.yaml (tidak ada hash pembanding; tidak mengubah hasil build)",
+      ".gitignore dan LICENSE_GENERATOR_GUIDE.md (disalin dari pohon asli; tidak memengaruhi kode)"
+    ]
+  },
+  "knownLimitations": [
+    "E2E Phase 3 '82/82' tidak dapat direproduksi: skrip historis tidak ada",
+    "Hash pohon manifest historis (6e40bb67...) tidak dapat direproduksi: metode tidak terdokumentasi",
+    "Berkas UNCERTAIN di atas bukti tidak langsung saja"
+  ],
+  "ib1Started": false
+}

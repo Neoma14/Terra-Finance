@@ -1,0 +1,1610 @@
+{
+ "uat-1": {
+  "balance-sheet": {
+   "cold:base": {
+    "wallMs": 95,
+    "walls": [
+     95,
+     88,
+     104
+    ],
+    "queries": 154,
+    "sqlMs": 86,
+    "jsMs": 9,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 47,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 22,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 8,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 43,
+      "totalMs": 7,
+      "rowsReturned": 0
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 75,
+    "walls": [
+     75,
+     74,
+     88
+    ],
+    "queries": 154,
+    "sqlMs": 69,
+    "jsMs": 6,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 36,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 20,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 7,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 43,
+      "totalMs": 5,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 67,
+    "walls": [
+     70,
+     52,
+     67
+    ],
+    "queries": 154,
+    "sqlMs": 59,
+    "jsMs": 8,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 30,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 15,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 8,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 43,
+      "totalMs": 5,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 64,
+    "walls": [
+     64,
+     73,
+     61
+    ],
+    "queries": 154,
+    "sqlMs": 54,
+    "jsMs": 10,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 24,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 20,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 6,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 43,
+      "totalMs": 4,
+      "rowsReturned": 0
+     }
+    ]
+   }
+  },
+  "income-statement": {
+   "cold:base": {
+    "wallMs": 37,
+    "walls": [
+     37,
+     38,
+     35
+    ],
+    "queries": 25,
+    "sqlMs": 32,
+    "jsMs": 6,
+    "shapes": 3,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 31,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 1,
+      "totalMs": 1,
+      "rowsReturned": 66
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 9
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SCAN accounts USING INDEX accounts_code_unique"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 32,
+    "walls": [
+     32,
+     26,
+     33
+    ],
+    "queries": 25,
+    "sqlMs": 31,
+    "jsMs": 1,
+    "shapes": 3,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 30,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 66
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 9
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 26,
+    "walls": [
+     28,
+     25,
+     26
+    ],
+    "queries": 25,
+    "sqlMs": 25,
+    "jsMs": 1,
+    "shapes": 3,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 24,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 1,
+      "totalMs": 1,
+      "rowsReturned": 66
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 9
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 17,
+    "walls": [
+     17,
+     21,
+     17
+    ],
+    "queries": 25,
+    "sqlMs": 16,
+    "jsMs": 1,
+    "shapes": 3,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 16,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 66
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 9
+     }
+    ]
+   }
+  },
+  "equity": {
+   "cold:base": {
+    "wallMs": 62,
+    "walls": [
+     63,
+     62,
+     60
+    ],
+    "queries": 54,
+    "sqlMs": 54,
+    "jsMs": 9,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 31,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 21,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 18
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 55,
+    "walls": [
+     79,
+     51,
+     55
+    ],
+    "queries": 54,
+    "sqlMs": 51,
+    "jsMs": 4,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 32,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 18,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 1,
+      "totalMs": 0,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 41,
+    "walls": [
+     41,
+     46,
+     40
+    ],
+    "queries": 54,
+    "sqlMs": 37,
+    "jsMs": 4,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 19,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 16,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 18
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 42,
+    "walls": [
+     37,
+     57,
+     42
+    ],
+    "queries": 54,
+    "sqlMs": 39,
+    "jsMs": 4,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 20,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 24,
+      "totalMs": 17,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     },
+     {
+      "sql": "select `id`, `code`, `normal_balance` from `account_types`",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 18
+     }
+    ]
+   }
+  },
+  "cash-flow": {
+   "cold:base": {
+    "wallMs": 1220,
+    "walls": [
+     1289,
+     1220,
+     945
+    ],
+    "queries": 6059,
+    "sqlMs": 700,
+    "jsMs": 520,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 6015,
+      "totalMs": 632,
+      "rowsReturned": 12030
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 14,
+      "totalMs": 41,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 1,
+      "totalMs": 21,
+      "rowsReturned": 6015
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 14,
+      "totalMs": 3,
+      "rowsReturned": 0
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ],
+     "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `j": [
+      "SEARCH jel USING INDEX journal_entry_lines_journal_entry_id_index (journal_entry_id=?)",
+      "SEARCH a USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 828,
+    "walls": [
+     786,
+     828,
+     918
+    ],
+    "queries": 6059,
+    "sqlMs": 684,
+    "jsMs": 144,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 6015,
+      "totalMs": 621,
+      "rowsReturned": 12030
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 14,
+      "totalMs": 35,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 1,
+      "totalMs": 24,
+      "rowsReturned": 6015
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 14,
+      "totalMs": 2,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 857,
+    "walls": [
+     867,
+     844,
+     857
+    ],
+    "queries": 6059,
+    "sqlMs": 628,
+    "jsMs": 229,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 6015,
+      "totalMs": 585,
+      "rowsReturned": 12030
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 14,
+      "totalMs": 25,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 1,
+      "totalMs": 14,
+      "rowsReturned": 6015
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 14,
+      "totalMs": 2,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 864,
+    "walls": [
+     841,
+     893,
+     864
+    ],
+    "queries": 6059,
+    "sqlMs": 629,
+    "jsMs": 235,
+    "shapes": 6,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 6015,
+      "totalMs": 587,
+      "rowsReturned": 12030
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 14,
+      "totalMs": 24,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 1,
+      "totalMs": 14,
+      "rowsReturned": 6015
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 14,
+      "totalMs": 2,
+      "rowsReturned": 0
+     }
+    ]
+   }
+  },
+  "trial-balance": {
+   "cold:base": {
+    "wallMs": 96,
+    "walls": [
+     94,
+     140,
+     96
+    ],
+    "queries": 223,
+    "sqlMs": 83,
+    "jsMs": 12,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 66,
+      "totalMs": 66,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 109,
+      "totalMs": 11,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 5,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     }
+    ],
+    "plans": {
+     "select * from `periods` where `id` = ? limit ?": [
+      "SEARCH periods USING INDEX sqlite_autoindex_periods_1 (id=?)"
+     ],
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 90,
+    "walls": [
+     90,
+     88,
+     93
+    ],
+    "queries": 223,
+    "sqlMs": 80,
+    "jsMs": 10,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 66,
+      "totalMs": 61,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 109,
+      "totalMs": 12,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 6,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 72,
+    "walls": [
+     74,
+     72,
+     66
+    ],
+    "queries": 223,
+    "sqlMs": 57,
+    "jsMs": 16,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 66,
+      "totalMs": 39,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 109,
+      "totalMs": 12,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 6,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 76,
+    "walls": [
+     76,
+     78,
+     70
+    ],
+    "queries": 223,
+    "sqlMs": 62,
+    "jsMs": 14,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 66,
+      "totalMs": 42,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 109,
+      "totalMs": 13,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 6,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 132
+     }
+    ]
+   }
+  },
+  "ledger(akun tersibuk)": {
+   "cold:base": {
+    "wallMs": 22,
+    "walls": [
+     20,
+     23,
+     22
+    ],
+    "queries": 6,
+    "sqlMs": 21,
+    "jsMs": 1,
+    "shapes": 4,
+    "top": [
+     {
+      "sql": "select `je`.`id` as `journalEntryId`, `je`.`entry_date` as `entryDate`, `je`.`reference_no` as `referenceNo`, `jel`.`memo`, `jel`.`debit`, `jel`.`credit` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_ent",
+      "count": 1,
+      "totalMs": 10,
+      "rowsReturned": 4644
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 1,
+      "totalMs": 9,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 26,
+    "walls": [
+     18,
+     26,
+     32
+    ],
+    "queries": 6,
+    "sqlMs": 32,
+    "jsMs": -6,
+    "shapes": 4,
+    "top": [
+     {
+      "sql": "select `je`.`id` as `journalEntryId`, `je`.`entry_date` as `entryDate`, `je`.`reference_no` as `referenceNo`, `jel`.`memo`, `jel`.`debit`, `jel`.`credit` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_ent",
+      "count": 1,
+      "totalMs": 18,
+      "rowsReturned": 4644
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 1,
+      "totalMs": 14,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 18,
+    "walls": [
+     18,
+     18,
+     26
+    ],
+    "queries": 6,
+    "sqlMs": 26,
+    "jsMs": -7,
+    "shapes": 4,
+    "top": [
+     {
+      "sql": "select `je`.`id` as `journalEntryId`, `je`.`entry_date` as `entryDate`, `je`.`reference_no` as `referenceNo`, `jel`.`memo`, `jel`.`debit`, `jel`.`credit` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_ent",
+      "count": 1,
+      "totalMs": 15,
+      "rowsReturned": 4644
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 1,
+      "totalMs": 10,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 19,
+    "walls": [
+     22,
+     18,
+     19
+    ],
+    "queries": 6,
+    "sqlMs": 19,
+    "jsMs": 1,
+    "shapes": 4,
+    "top": [
+     {
+      "sql": "select `je`.`id` as `journalEntryId`, `je`.`entry_date` as `entryDate`, `je`.`reference_no` as `referenceNo`, `jel`.`memo`, `jel`.`debit`, `jel`.`credit` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_ent",
+      "count": 1,
+      "totalMs": 13,
+      "rowsReturned": 4644
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 1,
+      "totalMs": 5,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select * from `account_types` where `id` = ? limit ?",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 0
+     }
+    ]
+   }
+  },
+  "dashboard": {
+   "cold:base": {
+    "wallMs": 2437,
+    "walls": [
+     2454,
+     2416,
+     2437
+    ],
+    "queries": 13381,
+    "sqlMs": 1891,
+    "jsMs": 547,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 12489,
+      "totalMs": 1310,
+      "rowsReturned": 26474
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 245,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 175,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 8,
+      "totalMs": 50,
+      "rowsReturned": 12489
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ],
+     "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `j": [
+      "SEARCH jel USING INDEX journal_entry_lines_journal_entry_id_index (journal_entry_id=?)",
+      "SEARCH a USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select `fiscal_year_start_month` as `m` from `company_profile` limit ?": [
+      "SCAN company_profile"
+     ],
+     "select count(*) as `count` from `journal_entries` where `status` = ? limit ?": [
+      "SEARCH journal_entries USING COVERING INDEX journal_entries_status_index (status=?)"
+     ],
+     "select `jel`.`account_id` as `accountId`, `a`.`code` as `accountCode`, `a`.`name` as `accountName`, `jel`.`debit`, `jel`.`credit`, `jel`.`memo` from `journal_entry_lines` as `jel` inner join `accounts": [
+      "SEARCH jel USING INDEX journal_entry_lines_journal_entry_id_index (journal_entry_id=?)",
+      "SEARCH a USING INDEX sqlite_autoindex_accounts_1 (id=?)",
+      "USE TEMP B-TREE FOR ORDER BY"
+     ],
+     "select * from `periods` where `id` = ? limit ?": [
+      "SEARCH periods USING INDEX sqlite_autoindex_periods_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 2417,
+    "walls": [
+     2480,
+     2417,
+     2368
+    ],
+    "queries": 13381,
+    "sqlMs": 1845,
+    "jsMs": 572,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 12489,
+      "totalMs": 1234,
+      "rowsReturned": 26474
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 245,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 187,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 8,
+      "totalMs": 56,
+      "rowsReturned": 12489
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 2198,
+    "walls": [
+     2197,
+     2198,
+     2259
+    ],
+    "queries": 13381,
+    "sqlMs": 1741,
+    "jsMs": 457,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 12489,
+      "totalMs": 1202,
+      "rowsReturned": 26474
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 227,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 169,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 8,
+      "totalMs": 41,
+      "rowsReturned": 12489
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 2253,
+    "walls": [
+     2253,
+     2323,
+     2194
+    ],
+    "queries": 13381,
+    "sqlMs": 1719,
+    "jsMs": 534,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 12489,
+      "totalMs": 1122,
+      "rowsReturned": 26474
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 258,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 178,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select distinct `je`.`id` as `journalEntryId` from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` inner join `accounts` as `a` on `a`.`id` = `jel`.`account_id` where `a`.`is_cash` = ? and `je`.`statu",
+      "count": 8,
+      "totalMs": 44,
+      "rowsReturned": 12489
+     }
+    ]
+   }
+  },
+  "counterparty-balances": {
+   "cold:base": {
+    "wallMs": 37,
+    "walls": [
+     37,
+     35,
+     81
+    ],
+    "queries": 4,
+    "sqlMs": 80,
+    "jsMs": -43,
+    "shapes": 2,
+    "top": [
+     {
+      "sql": "select `jel`.`counterparty_id` as `counterpartyId`, `a`.`normal_balance` as `normalBalance`, COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`",
+      "count": 2,
+      "totalMs": 79,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `type`, `code`, `name`, `is_active` as `isActive` from `counterparties` where `type` = ? order by `code` asc",
+      "count": 2,
+      "totalMs": 1,
+      "rowsReturned": 14
+     }
+    ],
+    "plans": {
+     "select `id`, `type`, `code`, `name`, `is_active` as `isActive` from `counterparties` where `type` = ? order by `code` asc": [
+      "SEARCH counterparties USING INDEX counterparties_type_code_unique (type=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 34,
+    "walls": [
+     34,
+     28,
+     36
+    ],
+    "queries": 4,
+    "sqlMs": 36,
+    "jsMs": -2,
+    "shapes": 2,
+    "top": [
+     {
+      "sql": "select `jel`.`counterparty_id` as `counterpartyId`, `a`.`normal_balance` as `normalBalance`, COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`",
+      "count": 2,
+      "totalMs": 36,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `type`, `code`, `name`, `is_active` as `isActive` from `counterparties` where `type` = ? order by `code` asc",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 14
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 21,
+    "walls": [
+     21,
+     21,
+     18
+    ],
+    "queries": 4,
+    "sqlMs": 18,
+    "jsMs": 3,
+    "shapes": 2,
+    "top": [
+     {
+      "sql": "select `jel`.`counterparty_id` as `counterpartyId`, `a`.`normal_balance` as `normalBalance`, COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`",
+      "count": 2,
+      "totalMs": 18,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `type`, `code`, `name`, `is_active` as `isActive` from `counterparties` where `type` = ? order by `code` asc",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 14
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 19,
+    "walls": [
+     19,
+     19,
+     19
+    ],
+    "queries": 4,
+    "sqlMs": 19,
+    "jsMs": 0,
+    "shapes": 2,
+    "top": [
+     {
+      "sql": "select `jel`.`counterparty_id` as `counterpartyId`, `a`.`normal_balance` as `normalBalance`, COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`",
+      "count": 2,
+      "totalMs": 19,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `type`, `code`, `name`, `is_active` as `isActive` from `counterparties` where `type` = ? order by `code` asc",
+      "count": 2,
+      "totalMs": 0,
+      "rowsReturned": 14
+     }
+    ]
+   }
+  },
+  "ratio-analysis": {
+   "cold:base": {
+    "wallMs": 95,
+    "walls": [
+     95,
+     96,
+     91
+    ],
+    "queries": 179,
+    "sqlMs": 80,
+    "jsMs": 15,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 26,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 22,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 18,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 8,
+      "rowsReturned": 0
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 98,
+    "walls": [
+     98,
+     89,
+     98
+    ],
+    "queries": 179,
+    "sqlMs": 89,
+    "jsMs": 8,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 33,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 24,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 19,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 6,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 70,
+    "walls": [
+     69,
+     72,
+     70
+    ],
+    "queries": 179,
+    "sqlMs": 62,
+    "jsMs": 8,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 20,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 18,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 15,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 5,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 67,
+    "walls": [
+     69,
+     66,
+     67
+    ],
+    "queries": 179,
+    "sqlMs": 59,
+    "jsMs": 7,
+    "shapes": 7,
+    "top": [
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 43,
+      "totalMs": 19,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 17,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 23,
+      "totalMs": 14,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as `isActive`, `is_system_account` as `isSystemAccount`, `cash_",
+      "count": 43,
+      "totalMs": 5,
+      "rowsReturned": 0
+     }
+    ]
+   }
+  },
+  "projection": {
+   "cold:base": {
+    "wallMs": 1360,
+    "walls": [
+     1360,
+     1352,
+     1421
+    ],
+    "queries": 6224,
+    "sqlMs": 1161,
+    "jsMs": 199,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 5332,
+      "totalMs": 522,
+      "rowsReturned": 10664
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 279,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 188,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 46,
+      "totalMs": 42,
+      "rowsReturned": 0
+     }
+    ],
+    "plans": {
+     "select `id`, `code`, `name`, `account_type_id` as `accountTypeId`, `account_subtype` as `accountSubtype`, `normal_balance` as `normalBalance`, `parent_account_id` as `parentAccountId`, `is_active` as ": [
+      "SEARCH accounts USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select `id`, `code`, `normal_balance` from `account_types`": [
+      "SCAN account_types"
+     ],
+     "select * from `account_types` where `id` = ? limit ?": [
+      "SEARCH account_types USING INDEX sqlite_autoindex_account_types_1 (id=?)"
+     ],
+     "select `fiscal_year_start_month` as `m` from `company_profile` limit ?": [
+      "SCAN company_profile"
+     ],
+     "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `j": [
+      "SEARCH jel USING INDEX journal_entry_lines_journal_entry_id_index (journal_entry_id=?)",
+      "SEARCH a USING INDEX sqlite_autoindex_accounts_1 (id=?)"
+     ],
+     "select count(*) as `count` from `journal_entries` where `status` = ? limit ?": [
+      "SEARCH journal_entries USING COVERING INDEX journal_entries_status_index (status=?)"
+     ],
+     "select `jel`.`account_id` as `accountId`, `a`.`code` as `accountCode`, `a`.`name` as `accountName`, `jel`.`debit`, `jel`.`credit`, `jel`.`memo` from `journal_entry_lines` as `jel` inner join `accounts": [
+      "SEARCH jel USING INDEX journal_entry_lines_journal_entry_id_index (journal_entry_id=?)",
+      "SEARCH a USING INDEX sqlite_autoindex_accounts_1 (id=?)",
+      "USE TEMP B-TREE FOR ORDER BY"
+     ],
+     "select * from `periods` where `id` = ? limit ?": [
+      "SEARCH periods USING INDEX sqlite_autoindex_periods_1 (id=?)"
+     ]
+    }
+   },
+   "cold:cache64": {
+    "wallMs": 1382,
+    "walls": [
+     1322,
+     1474,
+     1382
+    ],
+    "queries": 6224,
+    "sqlMs": 1129,
+    "jsMs": 253,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 5332,
+      "totalMs": 529,
+      "rowsReturned": 10664
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 264,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 180,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 46,
+      "totalMs": 44,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "cold:cache64mmap": {
+    "wallMs": 1306,
+    "walls": [
+     1196,
+     1306,
+     1314
+    ],
+    "queries": 6224,
+    "sqlMs": 1071,
+    "jsMs": 236,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 5332,
+      "totalMs": 516,
+      "rowsReturned": 10664
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 264,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 168,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 46,
+      "totalMs": 35,
+      "rowsReturned": 0
+     }
+    ]
+   },
+   "warm": {
+    "wallMs": 1253,
+    "walls": [
+     1294,
+     1253,
+     1248
+    ],
+    "queries": 6224,
+    "sqlMs": 1021,
+    "jsMs": 232,
+    "shapes": 17,
+    "top": [
+     {
+      "sql": "select `jel`.`journal_entry_id` as `journalEntryId`, `jel`.`account_id` as `accountId`, `jel`.`debit`, `jel`.`credit`, `a`.`is_cash` as `isCash`, `a`.`cash_flow_activity` as `cashFlowActivity` from `journal_entry_lines` as `jel` inner join `accounts` as `a` on",
+      "count": 5332,
+      "totalMs": 482,
+      "rowsReturned": 10664
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 198,
+      "totalMs": 234,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 207,
+      "totalMs": 169,
+      "rowsReturned": 0
+     },
+     {
+      "sql": "select COALESCE(SUM(jel.debit), 0) as debitTotal, COALESCE(SUM(jel.credit), 0) as creditTotal from `journal_entry_lines` as `jel` inner join `journal_entries` as `je` on `je`.`id` = `jel`.`journal_entry_id` where `jel`.`account_id` = ? and `je`.`status` in (?…",
+      "count": 46,
+      "totalMs": 40,
+      "rowsReturned": 0
+     }
+    ]
+   }
+  }
+ }
+}

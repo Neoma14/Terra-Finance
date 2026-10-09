@@ -1,0 +1,16 @@
+{
+ "integrity": "ok",
+ "fkViolations": 0,
+ "orphanLines": 0,
+ "linesNoAccount": 0,
+ "unbalancedPosted": 0,
+ "totalD": 189413609730,
+ "totalC": 189413609730,
+ "dupRefs": 0,
+ "reversedWithoutReversal": 0,
+ "reversalsWithoutOriginalReversed": 0,
+ "fractional": 2,
+ "journals": 12009,
+ "lines": 30988,
+ "auditRows": 24134
+}

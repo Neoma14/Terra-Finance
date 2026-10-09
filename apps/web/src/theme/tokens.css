@@ -1,0 +1,48 @@
+/* Token warna semantik, format "R G B" (tanpa rgb()) supaya modifier opacity
+   Tailwind (mis. text-ink/60) tetap berfungsi lewat rgb(var(--x) / <alpha>).
+   Identitas brand TERRA baru: Dark Charcoal/Navy (#1C2B3A) sbg basis dark
+   mode, Forest Green (#1F7A52/#3CB371) sbg SATU-SATUNYA aksen non-navy
+   (menggantikan skema navy+cyan lama).
+
+   CATATAN SCOPE: token `--ink`/`--heading` di sini TETAP dipakai dengan
+   PERAN yang sama seperti sebelumnya (heading = teks terkuat, ink = teks
+   isi/body) supaya ratusan pemakaian `text-ink/40..70` di seluruh halaman
+   (dipakai sebagai sistem 1-token+opacity utk hierarki teks) tidak berubah
+   kontrasnya secara tidak terduga. Token BARU `--text-secondary` &
+   `--text-muted` di bawah adalah nilai literal dari brief (#5F7188/#8A99AA
+   terang, #B7C5D8/#7F91A8 gelap) utk dipakai di komponen BARU/yang di-
+   refactor -- migrasi penuh semua pemakaian ink/NN existing ke token ini
+   sengaja belum dilakukan sekaligus (butuh audit kontras satu-satu). */
+:root {
+  --bg: 245 248 252; /* #F5F8FC */
+  --surface: 255 255 255;
+  --surface-2: 238 243 248; /* #EEF3F8 */
+  --surface-elevated: 255 255 255;
+  --line: 236 238 241; /* ~rgba(15,45,80,.08) di atas putih, dihitung solid */
+  --ink: 35 48 70;
+  --heading: 11 31 58; /* #0B1F3A */
+  --text-secondary: 95 113 136; /* #5F7188 */
+  --text-muted: 138 153 170; /* #8A99AA */
+
+  --accent: 31 122 82; /* #1F7A52 -- Terra Green */
+  --accent-hover: 21 92 61; /* #155C3D */
+
+  color-scheme: light;
+}
+
+:root.dark {
+  --bg: 11 19 25; /* #0B1319 -- charcoal (dulu navy-biru #06152E, belum ikut migrasi palet) */
+  --surface: 28 43 58; /* #1C2B3A */
+  --surface-2: 19 30 41; /* #131E29 */
+  --surface-elevated: 36 55 70; /* #243746 */
+  --line: 51 73 92; /* #33495C ~ rgba(255,255,255,.13) di atas surface */
+  --ink: 214 224 235;
+  --heading: 255 255 255;
+  --text-secondary: 183 197 216; /* #B7C5D8 */
+  --text-muted: 127 145 168; /* #7F91A8 */
+
+  --accent: 60 179 113; /* #3CB371 -- Terra Green (dark) */
+  --accent-hover: 76 196 137; /* #4CC489 */
+
+  color-scheme: dark;
+}

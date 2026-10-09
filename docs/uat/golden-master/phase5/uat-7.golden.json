@@ -1,0 +1,1399 @@
+{
+ "phase": "5.0",
+ "dataset": "uat-7",
+ "capturedFrom": "server hasil build (node dist/server.js) pada salinan data UAT",
+ "meta": {
+  "minDate": "2021-01-01",
+  "maxDate": "2026-10-06",
+  "years": [
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025",
+   "2026"
+  ],
+  "periods": 69
+ },
+ "determinism": true,
+ "oracleChecks": {
+  "total": 0,
+  "passed": 0
+ },
+ "requests": [
+  {
+   "id": "bs:full",
+   "path": "/reports/balance-sheet?fromDate=2021-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 3838,
+   "sha256": "c8aa2ee8592af6b01adb6d3106298ec83e4e9507bc13fa4c459e8b99f1d6721a",
+   "summary": {
+    "assets": 32834010999,
+    "liabilities": 3733488000,
+    "equity": 29100522999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "bs:2021",
+   "path": "/reports/balance-sheet?fromDate=2021-01-01&toDate=2021-12-31",
+   "status": 200,
+   "bytes": 2431,
+   "sha256": "9c20c347865c94dafa0d9a48761af603c5ff49d00a60f7795ec4f34f032843d3",
+   "summary": {
+    "assets": 4269558000,
+    "liabilities": 341687000,
+    "equity": 3927871000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "is:2021",
+   "path": "/reports/income-statement?fromDate=2021-01-01&toDate=2021-12-31",
+   "status": 200,
+   "bytes": 2047,
+   "sha256": "e7bc9384ea04aeb1db3c013265c5591e2c4f2bedb747ff78b20f291627a0679d",
+   "summary": {
+    "net": 1677871000,
+    "gross": 2369185000
+   }
+  },
+  {
+   "id": "eq:2021",
+   "path": "/reports/equity?fromDate=2021-01-01&toDate=2021-12-31",
+   "status": 200,
+   "bytes": 167,
+   "sha256": "ea981e665bf033da3db1beb91ee3e506f84c8b867595604d7068f4b70f5ecf8f",
+   "summary": {
+    "opening": 0,
+    "closing": 3927871000
+   }
+  },
+  {
+   "id": "cf:2021",
+   "path": "/reports/cash-flow?fromDate=2021-01-01&toDate=2021-12-31",
+   "status": 200,
+   "bytes": 352,
+   "sha256": "315b47a1e095117e540009d462f7639fb62fa7c7d2124d14e9973db4d04b23b1",
+   "summary": {
+    "net": 2943706000,
+    "begin": 0,
+    "end": 2943706000,
+    "unclassified": 36551724
+   }
+  },
+  {
+   "id": "dash:2021",
+   "path": "/dashboard?fromDate=2021-01-01&toDate=2021-12-31",
+   "status": 200,
+   "bytes": 5232,
+   "sha256": "2b05b85e487be57499bfbf20fcbdecd86acae4aaf12e148f4ef66540da196105"
+  },
+  {
+   "id": "bs:2022",
+   "path": "/reports/balance-sheet?fromDate=2022-01-01&toDate=2022-12-31",
+   "status": 200,
+   "bytes": 2874,
+   "sha256": "e7b36ab8ff17f29d7e56cbb9d92aada023f9200a091898dc583575f8cfc57d83",
+   "summary": {
+    "assets": 7386979000,
+    "liabilities": 731197000,
+    "equity": 6655782000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "is:2022",
+   "path": "/reports/income-statement?fromDate=2022-01-01&toDate=2022-12-31",
+   "status": 200,
+   "bytes": 2499,
+   "sha256": "d38ee9036161e665f8ab4543e1408aa280de8897d897c81292bb6f4ddc3b53b6",
+   "summary": {
+    "net": 2727911000,
+    "gross": 3849852000
+   }
+  },
+  {
+   "id": "eq:2022",
+   "path": "/reports/equity?fromDate=2022-01-01&toDate=2022-12-31",
+   "status": 200,
+   "bytes": 167,
+   "sha256": "8d887e19b6f733c70583cca2a923b47ce5e5fc3421bf9e9821e92ffa55900cd8",
+   "summary": {
+    "opening": 3927871000,
+    "closing": 6655782000
+   }
+  },
+  {
+   "id": "cf:2022",
+   "path": "/reports/cash-flow?fromDate=2022-01-01&toDate=2022-12-31",
+   "status": 200,
+   "bytes": 338,
+   "sha256": "6e08479cc09c96e41033398abb09543e2c3b54b53bddf02d70a6113fd31b6edc",
+   "summary": {
+    "net": 2666985000,
+    "begin": 2943706000,
+    "end": 5610691000,
+    "unclassified": 0
+   }
+  },
+  {
+   "id": "dash:2022",
+   "path": "/dashboard?fromDate=2022-01-01&toDate=2022-12-31",
+   "status": 200,
+   "bytes": 5607,
+   "sha256": "b48c6ff63c237bde32f6e99b773838db6e8d4b7bda9bbd27422aee701919ade1"
+  },
+  {
+   "id": "bs:2023",
+   "path": "/reports/balance-sheet?fromDate=2023-01-01&toDate=2023-12-31",
+   "status": 200,
+   "bytes": 3829,
+   "sha256": "d260d66fb6154c8c75ffb404f0dfe7119fdbd821aa7b703fa8c5dc29b602c5db",
+   "summary": {
+    "assets": 15088023500,
+    "liabilities": 2464004000,
+    "equity": 12624019500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "is:2023",
+   "path": "/reports/income-statement?fromDate=2023-01-01&toDate=2023-12-31",
+   "status": 200,
+   "bytes": 3505,
+   "sha256": "490ee43251dbe70d2a5e482a1992ff65e90be8d18e8cd81394ac3065720937c2",
+   "summary": {
+    "net": 5468237500,
+    "gross": 7679163500
+   }
+  },
+  {
+   "id": "eq:2023",
+   "path": "/reports/equity?fromDate=2023-01-01&toDate=2023-12-31",
+   "status": 200,
+   "bytes": 176,
+   "sha256": "8d01f7c17c341475bcf6f4cc729f57646b9abfabc784644d5b37735c0b0d5692",
+   "summary": {
+    "opening": 6655782000,
+    "closing": 12624019500
+   }
+  },
+  {
+   "id": "cf:2023",
+   "path": "/reports/cash-flow?fromDate=2023-01-01&toDate=2023-12-31",
+   "status": 200,
+   "bytes": 357,
+   "sha256": "10c2783e79bf3bd9cff2218b9f387f3f4a56edcab15722debe658a0bcff03a28",
+   "summary": {
+    "net": 6559499500,
+    "begin": 5610691000,
+    "end": 12170190500,
+    "unclassified": 0
+   }
+  },
+  {
+   "id": "dash:2023",
+   "path": "/dashboard?fromDate=2023-01-01&toDate=2023-12-31",
+   "status": 200,
+   "bytes": 6077,
+   "sha256": "cb73d8fc4a7f2e8e8f4350f4e3e269ab88c6189b9b56f987b6b9863d9733249e"
+  },
+  {
+   "id": "bs:2024",
+   "path": "/reports/balance-sheet?fromDate=2024-01-01&toDate=2024-12-31",
+   "status": 200,
+   "bytes": 3835,
+   "sha256": "0938aa9ab09ee89ab73224c397f294eeff245c2b0f0d1baecd3e1d3717109b3c",
+   "summary": {
+    "assets": 22956893500,
+    "liabilities": 2834492000,
+    "equity": 20122401500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "is:2024",
+   "path": "/reports/income-statement?fromDate=2024-01-01&toDate=2024-12-31",
+   "status": 200,
+   "bytes": 3509,
+   "sha256": "ea7066fe96db1b2e20f77f8a10c402fb2bcb0fb57d820bd02481241d234c0286",
+   "summary": {
+    "net": 7498382000,
+    "gross": 10821127000
+   }
+  },
+  {
+   "id": "eq:2024",
+   "path": "/reports/equity?fromDate=2024-01-01&toDate=2024-12-31",
+   "status": 200,
+   "bytes": 169,
+   "sha256": "bb2b35570d7a8037f9ebef08301f1b0e24473ae8aacca62b6f6dea6fe25667bb",
+   "summary": {
+    "opening": 12624019500,
+    "closing": 20122401500
+   }
+  },
+  {
+   "id": "cf:2024",
+   "path": "/reports/cash-flow?fromDate=2024-01-01&toDate=2024-12-31",
+   "status": 200,
+   "bytes": 349,
+   "sha256": "2d3d366bd5164a90389dafc08bd920d346b3d88bf76f918bfc52d982ac21486f",
+   "summary": {
+    "net": 7053605000,
+    "begin": 12170190500,
+    "end": 19223795500,
+    "unclassified": 0
+   }
+  },
+  {
+   "id": "dash:2024",
+   "path": "/dashboard?fromDate=2024-01-01&toDate=2024-12-31",
+   "status": 200,
+   "bytes": 6087,
+   "sha256": "5b8043bd2099a845107aa85ca6c19edba4ca5b6ea775afe50f811ded42a55fe2"
+  },
+  {
+   "id": "bs:2025",
+   "path": "/reports/balance-sheet?fromDate=2025-01-01&toDate=2025-12-31",
+   "status": 200,
+   "bytes": 3838,
+   "sha256": "1229e795a449db687fb27ff31da81820ca9b29838aa7ae9e8f5880508a0ea34d",
+   "summary": {
+    "assets": 32783573500,
+    "liabilities": 3733488000,
+    "equity": 29050085500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "is:2025",
+   "path": "/reports/income-statement?fromDate=2025-01-01&toDate=2025-12-31",
+   "status": 200,
+   "bytes": 3510,
+   "sha256": "c5d6e975b5162fe54a322ac4e28aa74cbb0c5768890a8f8e487a4211956232ec",
+   "summary": {
+    "net": 8927684000,
+    "gross": 13117784000
+   }
+  },
+  {
+   "id": "eq:2025",
+   "path": "/reports/equity?fromDate=2025-01-01&toDate=2025-12-31",
+   "status": 200,
+   "bytes": 169,
+   "sha256": "1b41dff9564921fae36a3d2d85bfc69158f025a3a19030f4d7b1dda8b32e320b",
+   "summary": {
+    "opening": 20122401500,
+    "closing": 29050085500
+   }
+  },
+  {
+   "id": "cf:2025",
+   "path": "/reports/cash-flow?fromDate=2025-01-01&toDate=2025-12-31",
+   "status": 200,
+   "bytes": 358,
+   "sha256": "d9427cdcaee0a012c4057191f1bb497338f35f0f1fbeaf8f9e9ffb9e5ec46d90",
+   "summary": {
+    "net": 7847770000,
+    "begin": 19223795500,
+    "end": 27071565500,
+    "unclassified": 0
+   }
+  },
+  {
+   "id": "dash:2025",
+   "path": "/dashboard?fromDate=2025-01-01&toDate=2025-12-31",
+   "status": 200,
+   "bytes": 6099,
+   "sha256": "877ad671f1c626b0d5f1828679f0d520aee7c151090d636c2098fe523f737274"
+  },
+  {
+   "id": "bs:2026",
+   "path": "/reports/balance-sheet?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 3838,
+   "sha256": "d5acb0b28aea05e2610e5257ca58d40af55341d4a7b017e915db63cdeb28e84e",
+   "summary": {
+    "assets": 32834010999,
+    "liabilities": 3733488000,
+    "equity": 29100522999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "is:2026",
+   "path": "/reports/income-statement?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 882,
+   "sha256": "c1c2e604c1f63ebc280f3d90039a295f0d322ff347a17a894120e5c7eada619d",
+   "summary": {
+    "net": 50437499,
+    "gross": 50437499
+   }
+  },
+  {
+   "id": "eq:2026",
+   "path": "/reports/equity?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 167,
+   "sha256": "89407b4a53efe41498ad87b2872b6e521cb2e3465625df215477b9ac82783945",
+   "summary": {
+    "opening": 29050085500,
+    "closing": 29100522999
+   }
+  },
+  {
+   "id": "cf:2026",
+   "path": "/reports/cash-flow?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 336,
+   "sha256": "f342eb6d83dbf53058669ad9cd737d942698895be295ed3d0456e564de215858",
+   "summary": {
+    "net": 50437499,
+    "begin": 27071565500,
+    "end": 27122002999,
+    "unclassified": 0
+   }
+  },
+  {
+   "id": "dash:2026",
+   "path": "/dashboard?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 4398,
+   "sha256": "490003947a2ef94365d7d79b3f0a650549a8db2ca6f34a61fb9071abf152df86"
+  },
+  {
+   "id": "is:Q1-last",
+   "path": "/reports/income-statement?fromDate=2026-01-01&toDate=2026-03-31",
+   "status": 200,
+   "bytes": 725,
+   "sha256": "7a20f0ed3190e7516747dab8d36abf1bb090cf589ffc5a8bbeef4c0283b1f8a1",
+   "summary": {
+    "net": 4124166,
+    "gross": 4124166
+   }
+  },
+  {
+   "id": "tb:Jan 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3125,
+   "sha256": "fa94d2b9575d18c6e69e88efddde7f3f4d280ba071902f8bf8e1aca9f9f3f194",
+   "summary": {
+    "debit": 2863825000,
+    "credit": 2863825000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Feb 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3286,
+   "sha256": "d1631b71784c2c1ce16ed7217c4bd3fd2a159abfa2af10831927a257d3c78893",
+   "summary": {
+    "debit": 3021875000,
+    "credit": 3021875000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mar 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3284,
+   "sha256": "64d96db39a93f32bd00bda2630e580517e87ec71920414f32d785cb28733e50e",
+   "summary": {
+    "debit": 3114333000,
+    "credit": 3114333000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Apr 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3286,
+   "sha256": "6d2d3141cede5a166737da8bc4d9711ae9b1d643c4d454fe0d4719a394d052ef",
+   "summary": {
+    "debit": 3347182000,
+    "credit": 3347182000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mei 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3286,
+   "sha256": "d122f994d0aa18c4ac03453c8b029d2044c1c1e80d5aee42fa3191c7e6e11dc4",
+   "summary": {
+    "debit": 3559465000,
+    "credit": 3559465000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jun 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3405,
+   "sha256": "51ef303d32591b84fa6bf4b9822401ef80337fce5eb7851e58ba7cd7f7c88d23",
+   "summary": {
+    "debit": 3687642000,
+    "credit": 3687642000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jul 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3682,
+   "sha256": "16e0a309b193d45e442ff5cdb1a8a7e10a479b0dbd12805a3df222ca95b5d84d",
+   "summary": {
+    "debit": 3819623000,
+    "credit": 3819623000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Agu 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3682,
+   "sha256": "2d98a65d5394e29890ace8469ae144389e2acf446bb4d51058849890085dedc3",
+   "summary": {
+    "debit": 3963903000,
+    "credit": 3963903000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Sep 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3684,
+   "sha256": "c1686a10b41c8c46c2238dd9f6eb53f214f65a8144cf784c45572b278562ca05",
+   "summary": {
+    "debit": 4129537000,
+    "credit": 4129537000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Okt 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3682,
+   "sha256": "c8e54bccae32247e2080c8e89c0bdb4bed7f4f8032e39a60b61b73bbcc2fd63f",
+   "summary": {
+    "debit": 4291299000,
+    "credit": 4291299000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Nov 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3684,
+   "sha256": "80bc576a0a46d37982c2c2a9b4ff8662abcf75bc5151d1abfd307756c10a4a7f",
+   "summary": {
+    "debit": 4380670000,
+    "credit": 4380670000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Des 2021",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3684,
+   "sha256": "e99bf2a398669767c68c07519040cc80bff27ce82aa0cf41c1d3080cdeeae1a2",
+   "summary": {
+    "debit": 4535527000,
+    "credit": 4535527000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jan 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3684,
+   "sha256": "660e277ab3eda22470fc7d923a837e586a364e201e31a0adf90c58508a44ce9f",
+   "summary": {
+    "debit": 4770782000,
+    "credit": 4770782000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Feb 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3686,
+   "sha256": "77d697f02393ee3a1951ad2e4fe2092cc429a5efe1b16d28f46978cd4db7c676",
+   "summary": {
+    "debit": 4985915000,
+    "credit": 4985915000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mar 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4403,
+   "sha256": "349b340df4e003f59cb674b6eb855e2269b0db886465f0fff683b7302db6f1e9",
+   "summary": {
+    "debit": 5854295500,
+    "credit": 5854295500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Apr 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4401,
+   "sha256": "e4dbc22614f5c1b1875e0d21d81233c6909498376d31ac8553079f352e6ccbce",
+   "summary": {
+    "debit": 6075260000,
+    "credit": 6075260000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mei 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4402,
+   "sha256": "499875baf5187fbbf967c7c0e11c95387830397eafcec9a20c6691c30fae7766",
+   "summary": {
+    "debit": 6474229500,
+    "credit": 6474229500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jun 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4399,
+   "sha256": "caf419bd6f71d204f7eb4e9084564df3f3cfb29b9d665418448b6ad7fefe7c85",
+   "summary": {
+    "debit": 6578932000,
+    "credit": 6578932000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jul 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4402,
+   "sha256": "6d4704daf333f6c397082e77eab6928227114666e496ca8f035864bf55deed43",
+   "summary": {
+    "debit": 6968303500,
+    "credit": 6968303500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Agu 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4399,
+   "sha256": "5642c2b716c2aa5640519e7a75064fafba0efcac1e638456d3db072eec741a02",
+   "summary": {
+    "debit": 7200427000,
+    "credit": 7200427000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Sep 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4400,
+   "sha256": "c548d18921172a36475b7818b9b891c6d5c1688f7ba08598f88b30d578e954f2",
+   "summary": {
+    "debit": 7606624500,
+    "credit": 7606624500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Okt 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4400,
+   "sha256": "f24fef09aaa500a21d1a4017fbdd00e66d83d2a2ef3c105e0872c87803fa8cc5",
+   "summary": {
+    "debit": 7776190000,
+    "credit": 7776190000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Nov 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4548,
+   "sha256": "7b0420f098d9ab82299a59684379f56b125d106c70fe33831973ca9744f7bf5c",
+   "summary": {
+    "debit": 8052637500,
+    "credit": 8052637500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Des 2022",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4549,
+   "sha256": "dad9b641224b79631ff06deb18bc695fe5ed6caf1f6985a04939a64cf9da5744",
+   "summary": {
+    "debit": 8400022000,
+    "credit": 8400022000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jan 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4550,
+   "sha256": "edf840d7520fa025a9d6b97ccbb2bbec3a496a7a7678900f8bc5bc767120f153",
+   "summary": {
+    "debit": 8915481500,
+    "credit": 8915481500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Feb 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4552,
+   "sha256": "dabd1465e6f734acd146392840d300e8593b8dd1f2f9f1d585249bf7a47a0bcb",
+   "summary": {
+    "debit": 9333244000,
+    "credit": 9333244000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mar 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 4551,
+   "sha256": "669dcd08198d8cc7d919e9c99224efc5864577201f3022817e7a31480a5f9bcd",
+   "summary": {
+    "debit": 9715887500,
+    "credit": 9715887500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Apr 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6094,
+   "sha256": "d2b20713b1a7b9bfaff6d694658f67aab872023c68c1ce949c774477e4e24536",
+   "summary": {
+    "debit": 10635887000,
+    "credit": 10635887000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mei 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6095,
+   "sha256": "a9fcc8eb5925936d8bcccc30765625ae09357f2bdc540b817ddf6e1ce49e89f7",
+   "summary": {
+    "debit": 11398373500,
+    "credit": 11398373500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jun 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6213,
+   "sha256": "58261686106575a34784a789e62a0def579b973e6da37271a5bf91c50603b2ea",
+   "summary": {
+    "debit": 12733278000,
+    "credit": 12733278000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jul 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6443,
+   "sha256": "ee6522f4b76e9734a4e148dc4c9d909ddf560a58d3bb50229a8982499c0c912c",
+   "summary": {
+    "debit": 13511432000,
+    "credit": 13511432000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Agu 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6439,
+   "sha256": "66ea06be6178f9538909c24f5887517286d13a4ad2b4cee6b0f44070b5a83cd4",
+   "summary": {
+    "debit": 13561536500,
+    "credit": 13561536500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Sep 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6440,
+   "sha256": "ac67fb83762603573cf416c4b74b3f3e67c44a2d944649a2e80e03a9627455c3",
+   "summary": {
+    "debit": 14144806000,
+    "credit": 14144806000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Okt 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6440,
+   "sha256": "d6840b5b874673fb142e8a4adb3f775e9a7a2909ee290b985464bcf5caed8ca0",
+   "summary": {
+    "debit": 14757285500,
+    "credit": 14757285500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Nov 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6442,
+   "sha256": "cabe65e9ed732c53d330740a5bad58c26dd13ba0d4d872574b568ec695cfc315",
+   "summary": {
+    "debit": 15552774000,
+    "credit": 15552774000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Des 2023",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6443,
+   "sha256": "24ef3fb08fd16c91953e7df0e541661cc70f5c2a9423ff1991f0a1fdf25bba2d",
+   "summary": {
+    "debit": 16227918500,
+    "credit": 16227918500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jan 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6444,
+   "sha256": "cdd8051f017834ce650184f158a33e07cca2d79c5f30c143caa915c3bc089b82",
+   "summary": {
+    "debit": 17616444000,
+    "credit": 17616444000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Feb 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6446,
+   "sha256": "8c2da7b6dcd5446b629279ad6ef62c5d8b17bb36ccd7e4833365f683ed2f1ec0",
+   "summary": {
+    "debit": 17650157500,
+    "credit": 17650157500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mar 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6446,
+   "sha256": "c367c2b7f44b0abe9f8da099f52ffa078088dcd73f64ff4a86791ced9ba6c1af",
+   "summary": {
+    "debit": 18263467000,
+    "credit": 18263467000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Apr 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6447,
+   "sha256": "66e9ec050824f5993529d1e371a92451b2576f64221b2bda9c7cba008a8a9674",
+   "summary": {
+    "debit": 19033350500,
+    "credit": 19033350500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mei 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6447,
+   "sha256": "2034356472ac65a962b7426278c316289e2fc232b05bcd632b19576f8a21f0b0",
+   "summary": {
+    "debit": 19790836000,
+    "credit": 19790836000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jun 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6447,
+   "sha256": "bee215a8727039b47f9c1abdfddd017d117651c09b88b73a1eec0d00bf72fec2",
+   "summary": {
+    "debit": 20312563500,
+    "credit": 20312563500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jul 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6447,
+   "sha256": "c9b71efebb57a422502fb31fb6d54f8f0105d45a98b9c3d7f237a653affefdff",
+   "summary": {
+    "debit": 21059206000,
+    "credit": 21059206000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Agu 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6449,
+   "sha256": "bf33c9f657f15c970fff34798dc0a253c11dc706e556e32b03767eb0dc7b744b",
+   "summary": {
+    "debit": 22285684500,
+    "credit": 22285684500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Sep 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6449,
+   "sha256": "981ad30ef62e278d022379b467c1237c03915d1f5a808315757f5b3865fae26d",
+   "summary": {
+    "debit": 22531264000,
+    "credit": 22531264000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Okt 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6450,
+   "sha256": "b3bcd6291212a4e2386866f7624b956c8fc8e46e57189d56dcd5039b297bea57",
+   "summary": {
+    "debit": 23520420500,
+    "credit": 23520420500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Nov 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6451,
+   "sha256": "b545570a507aa16ffbd4adbb20f93a4d658927aa682521107136c4e0e3707564",
+   "summary": {
+    "debit": 23988422000,
+    "credit": 23988422000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Des 2024",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6449,
+   "sha256": "9b209e01aa1a7156aa8a561086c3c05cf92d163a017ec82f2af7fce230854c8c",
+   "summary": {
+    "debit": 24339246500,
+    "credit": 24339246500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jan 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6452,
+   "sha256": "a34147cba4206dfe9a3333d84c82c5de942a5e58ec538308009dd3862c5f1f60",
+   "summary": {
+    "debit": 25451594000,
+    "credit": 25451594000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Feb 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6452,
+   "sha256": "af0a082167d4698de727e9f3358604ed9e146128b18b219deaca7b3bab0afa95",
+   "summary": {
+    "debit": 26613150500,
+    "credit": 26613150500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mar 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6452,
+   "sha256": "8d435a1b70fda0fa960cd7d2dcdff7af0d7ce1b06ed40a12f2b6a0a1334ba498",
+   "summary": {
+    "debit": 27133045500,
+    "credit": 27133045500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Apr 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6452,
+   "sha256": "1c594fced740b6cbda6d38878cdac2219340e99750bfbeafc707c6313dbcad28",
+   "summary": {
+    "debit": 27702854000,
+    "credit": 27702854000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mei 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6451,
+   "sha256": "6361ab186493128cf024c1b5b5ab5a706e6969eb28193374a301dc50d47ad5a7",
+   "summary": {
+    "debit": 28313064500,
+    "credit": 28313064500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jun 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6453,
+   "sha256": "869252fb0b6d9c868040c8c4d247af6e9b40c4d0c4bf84aad2fc3408dc26279b",
+   "summary": {
+    "debit": 29296144000,
+    "credit": 29296144000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jul 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6452,
+   "sha256": "1923e832f5dcdf9d578473b761b07bcb1a85dee397796139be2ae9be7061e9fa",
+   "summary": {
+    "debit": 29961564500,
+    "credit": 29961564500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Agu 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6451,
+   "sha256": "543485ea1fc91f9806f03d57850fbfde835937ca71c6ffb139fadd8cbf5285fe",
+   "summary": {
+    "debit": 30850123000,
+    "credit": 30850123000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Sep 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6454,
+   "sha256": "9f038cbdf60a4d72e4ad1306af5b345976cf19396692e0d98cd4522b7afbc445",
+   "summary": {
+    "debit": 31767805000,
+    "credit": 31767805000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Okt 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6455,
+   "sha256": "bd696c89de5e7f11ecb30a1992e26942f6832434cf2ba1cc00707ed7d2215c1e",
+   "summary": {
+    "debit": 33145713500,
+    "credit": 33145713500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Nov 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6455,
+   "sha256": "b0aed268a30cc4065d83fca4bb39e438ec84ecb813312e4992c98b45d1826ff5",
+   "summary": {
+    "debit": 34006588000,
+    "credit": 34006588000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Des 2025",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 6454,
+   "sha256": "5bd5424e59d05f6243cdef9cda8518ec3424eae20656c5ac24ca10fcc83acfcc",
+   "summary": {
+    "debit": 34963611500,
+    "credit": 34963611500,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Feb 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3786,
+   "sha256": "bb0079e5371eebaaee38f1a6f1da366162dc57a368627d4b1270ef9820d25a36",
+   "summary": {
+    "debit": 33377374000,
+    "credit": 33377374000,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mar 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3804,
+   "sha256": "0cedafcc88fd9115de76bd719d332f2757f7e1d4dfe114e794fbd02bc462553c",
+   "summary": {
+    "debit": 33381497666,
+    "credit": 33381497666,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Apr 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3668,
+   "sha256": "61738dc3e1e97e3383b7ce08ed517ac1a7b32fd813e9395b84b8a31abf2b520d",
+   "summary": {
+    "debit": 33385161665,
+    "credit": 33385161665,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Mei 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3668,
+   "sha256": "77eecb08dd6df0b6c9918723b0167372aeec947d623f522c2457162d959b2c38",
+   "summary": {
+    "debit": 33388823999,
+    "credit": 33388823999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jun 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3668,
+   "sha256": "6e60885f81b49c2c12380929d604b1b8ff4809b0b0f15d5b4cefdf5591d0ce79",
+   "summary": {
+    "debit": 33392486666,
+    "credit": 33392486666,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Jul 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3815,
+   "sha256": "7c6d0004ef8b63c737183a6c13e242c697db03a828fd46ba7a35c7f18b97b568",
+   "summary": {
+    "debit": 33405486999,
+    "credit": 33405486999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Agu 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3815,
+   "sha256": "b568cc06b9cd004b2ea917f739bdbc0fce4f7b86207bcaefd7c7075ddf2d9e80",
+   "summary": {
+    "debit": 33418479999,
+    "credit": 33418479999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Sep 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3669,
+   "sha256": "74fb7c486e3e0c3dbf215098672c2eead3a588ce03e1cb8538017d45418ee129",
+   "summary": {
+    "debit": 33427810999,
+    "credit": 33427810999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "tb:Okt 2026",
+   "path": "/trial-balance?periodId=<id>",
+   "status": 200,
+   "bytes": 3522,
+   "sha256": "cff30d6a8edb247cea369239f90e7c25d5de6facdf7d5a98344f3306d19839df",
+   "summary": {
+    "debit": 33427810999,
+    "credit": 33427810999,
+    "balanced": true
+   }
+  },
+  {
+   "id": "ledger:top1:full",
+   "path": "/ledger/<id>?fromDate=2021-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 856877,
+   "sha256": "1852fd66e5059213f6b67e4095f84c4608a9377eab7bf93c740068bce8cd041b",
+   "summary": {
+    "opening": 0,
+    "ending": 3642470500,
+    "lines": 4644
+   }
+  },
+  {
+   "id": "ledger:top1:last-year",
+   "path": "/ledger/<id>?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 723053,
+   "sha256": "b0eb28963d44a575d75679300c5007fce533fc72792fe6f242564d52f18fa014",
+   "summary": {
+    "opening": 3614472500,
+    "ending": 3642470500,
+    "lines": 4000
+   }
+  },
+  {
+   "id": "ledger:top2:full",
+   "path": "/ledger/<id>?fromDate=2021-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 814016,
+   "sha256": "81cf5ef103d01f7fa61a90d796572f3989e223c975c7c610742ad58f0af6827e",
+   "summary": {
+    "opening": 0,
+    "ending": 9597501500,
+    "lines": 4440
+   }
+  },
+  {
+   "id": "ledger:top2:last-year",
+   "path": "/ledger/<id>?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 713455,
+   "sha256": "4f88ce654b57e227ca38bed89cf370f4d807fc00cffc59e6ec0fb4ac5c62c932",
+   "summary": {
+    "opening": 0,
+    "ending": 27998000,
+    "lines": 4000
+   }
+  },
+  {
+   "id": "ledger:top3:full",
+   "path": "/ledger/<id>?fromDate=2021-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 750046,
+   "sha256": "8292036c42e5278e848f27ee515a2214995c27ca775d67f080a006761a10ec56",
+   "summary": {
+    "opening": 0,
+    "ending": 1289000000,
+    "lines": 3600
+   }
+  },
+  {
+   "id": "ledger:top3:last-year",
+   "path": "/ledger/<id>?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 164,
+   "sha256": "4f94461c24983ba9cacbd0f8386e392e0707128614d1f18fb80b874038c2d0c6",
+   "summary": {
+    "opening": 1289000000,
+    "ending": 1289000000,
+    "lines": 0
+   }
+  },
+  {
+   "id": "ledger:top4:full",
+   "path": "/ledger/<id>?fromDate=2021-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 534890,
+   "sha256": "9fa5ae16561504be7fe4f61166280a2442f2f366ecefb0b5ce8ec90251ea1978",
+   "summary": {
+    "opening": 0,
+    "ending": 4659178499,
+    "lines": 2836
+   }
+  },
+  {
+   "id": "ledger:top4:last-year",
+   "path": "/ledger/<id>?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 361235,
+   "sha256": "404c486aaf46a1ed419e0a1369fd9b44864b6f5142351c5c2c99fbd30a741903",
+   "summary": {
+    "opening": 4637189500,
+    "ending": 4659178499,
+    "lines": 2001
+   }
+  },
+  {
+   "id": "ledger:top5:full",
+   "path": "/ledger/<id>?fromDate=2021-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 477029,
+   "sha256": "59e353b9d691ad7edc44eb3d474091b1e0846024dd1b251da840763891a37f6f",
+   "summary": {
+    "opening": 0,
+    "ending": 11908267499,
+    "lines": 2551
+   }
+  },
+  {
+   "id": "ledger:top5:last-year",
+   "path": "/ledger/<id>?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 356213,
+   "sha256": "d66ea95adaa8dde0db9e41ba58695563e532d0cf208e0dfb27098d3cebfdfbc1",
+   "summary": {
+    "opening": 0,
+    "ending": 21988999,
+    "lines": 2001
+   }
+  },
+  {
+   "id": "cp:vendor",
+   "path": "/counterparties/balances?type=vendor",
+   "status": 200,
+   "bytes": 1466,
+   "sha256": "8988bd4bce5c6c43064b96d61459e7e5badc6fc803bf9bc33db941d546bae2a0"
+  },
+  {
+   "id": "cp:customer",
+   "path": "/counterparties/balances?type=customer",
+   "status": 200,
+   "bytes": 304,
+   "sha256": "2b909137ce8e19d5fe905f7ff7847a5b0e84cca5be5ac3a49fd02842232ad5d5"
+  },
+  {
+   "id": "analysis",
+   "path": "/analysis?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 729,
+   "sha256": "3669e92221c9d060a243ddee84cb1bd123e0e2bbf62fd73560f210c35b552ba1"
+  },
+  {
+   "id": "projection",
+   "path": "/projection?asOfDate=2026-10-06&monthsAhead=3",
+   "status": 200,
+   "bytes": 1025,
+   "sha256": "a8b96762ba06cc1a2c63f6c9dfbb54679d9b18be856b0e3a4f27bd7d9057ba2f"
+  },
+  {
+   "id": "tax-summary",
+   "path": "/tax-summary?fromDate=2026-01-01&toDate=2026-10-06",
+   "status": 200,
+   "bytes": 279,
+   "sha256": "d2aa4a6a39022019de8df3c81952dd070cade957502bd72dd568a7b198004c34"
+  },
+  {
+   "id": "search:kas",
+   "path": "/search?q=kas",
+   "status": 200,
+   "bytes": 1784,
+   "sha256": "ca3819e47dfd973b8fb281bd5cfca1f2cd33b496fde69ee642163ed35ba62878"
+  },
+  {
+   "id": "search:1000000",
+   "path": "/search?q=1000000",
+   "status": 200,
+   "bytes": 29,
+   "sha256": "ec6cd14d8b310e2e2f140cdf28fde70f4e93eca3511862288bec772005b972a5"
+  },
+  {
+   "id": "search:gaji",
+   "path": "/search?q=gaji",
+   "status": 200,
+   "bytes": 1892,
+   "sha256": "9910a13f17f02c1a449e36b4b9185d6aea2c18d49566ae12abbe6bf2a35289d0"
+  },
+  {
+   "id": "journals:p1",
+   "path": "/journals?pageSize=50&page=1",
+   "status": 200,
+   "bytes": 13740,
+   "sha256": "715f946f89e0da8171bb1e4ccfafebe015d0386aa2f30031ccec002abd33dd72"
+  }
+ ],
+ "exportDocuments": {
+  "export:balance-sheet": "5734be0c1fb99471be60d7ccd41ec2009a91e4afd9e95681e95bbefb36118f07",
+  "export:income-statement": "f7a3900134779a48b9597e9943490d503b7ae1468032299b9011fec34d4f2c60",
+  "export:equity": "6b7277b9841abf3113913f6a1709b3d8f0d313be6963d8e37e60de8b1a697cd0",
+  "export:cash-flow": "ade42fe5d1bb63b094a703ff9b263f9aff162c27a3b194a357295ca8b415e5e9",
+  "export:trial-balance": "71f6fc87c7f9192bab56b78698189257678035fa93ad11141e6f861a702308fd",
+  "export:ledger": "6fe80eddd68a18c8b784e99490a9c8a3313bc219759c9b5e344a7ea8634adc4c"
+ },
+ "aggregateSha256": "607d2f2fac1cf90ef10fce6d0f04df2e2dff3c2c6bfe0c8fbac3336067cb7181"
+}

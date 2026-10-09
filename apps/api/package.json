@@ -1,0 +1,40 @@
+{
+  "name": "@konsultan/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json && node -e \"require('fs').cpSync('src/assets','dist/assets',{recursive:true})\"",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "migrate:make": "knex --knexfile src/db/master/knexfile.ts migrate:make"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^10.0.1",
+    "@fastify/multipart": "^9.0.1",
+    "@fastify/rate-limit": "^10.1.1",
+    "@fastify/static": "^8.0.3",
+    "@konsultan/shared": "workspace:*",
+    "argon2": "^0.41.1",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "fastify": "^5.0.0",
+    "fastify-plugin": "^5.0.1",
+    "knex": "^3.1.0",
+    "pdfkit": "^0.17.2",
+    "pino-pretty": "^11.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.7.5",
+    "@types/pdfkit": "^0.17.6",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  }
+}

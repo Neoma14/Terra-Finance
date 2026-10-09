@@ -1,0 +1,25 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+coverage/
+.turbo/
+pnpm-lock.yaml.bak
+
+# Secret vendor (license signing) -- JANGAN PERNAH di-commit
+*.pem
+TERRA-VENDOR/
+issued-licenses.log
+license-private*
+
+# artefak build/UAT lokal
+deploy/api-hoisted/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+personas.json

@@ -1,0 +1,97 @@
+{"label":"COA import preview","ms":56}
+{"label":"COA import commit","ms":41}
+{"label":"journal import preview batch1 (500 jurnal)","ms":233}
+{"label":"journal import commit batch1","ms":940}
+{"label":"journal import preview batch2 (500 jurnal)","ms":183}
+{"label":"journal import commit batch2","ms":939}
+{"label":"journal import preview batch3 (500 jurnal)","ms":179}
+{"label":"journal import commit batch3","ms":977}
+{"label":"journal import preview batch4 (500 jurnal)","ms":197}
+{"label":"journal import commit batch4","ms":882}
+{"label":"journal import preview batch5 (500 jurnal)","ms":167}
+{"label":"journal import commit batch5","ms":963}
+{"label":"journal import preview batch6 (500 jurnal)","ms":169}
+{"label":"journal import commit batch6","ms":1042}
+{"label":"journal import preview batch7 (500 jurnal)","ms":156}
+{"label":"journal import commit batch7","ms":915}
+{"label":"journal import preview batch8 (500 jurnal)","ms":179}
+{"label":"journal import commit batch8","ms":1065}
+{"label":"journal import preview batch9 (500 jurnal)","ms":176}
+{"label":"journal import commit batch9","ms":963}
+{"label":"journal import preview batch10 (500 jurnal)","ms":163}
+{"label":"journal import commit batch10","ms":966}
+{"label":"journal import preview batch11 (500 jurnal)","ms":207}
+{"label":"journal import commit batch11","ms":1055}
+{"label":"journal import preview batch12 (407 jurnal)","ms":152}
+{"label":"journal import commit batch12","ms":48338}
+{"label":"ledger 1112 5 tahun","ms":33}
+{"label":"ledger 1120 5 tahun","ms":26}
+{"label":"ledger 1200 5 tahun","ms":21}
+{"label":"ledger 1300 5 tahun","ms":39}
+{"label":"ledger 2100 5 tahun","ms":20}
+{"label":"ledger 1490 5 tahun","ms":13}
+{"label":"ledger 4113 5 tahun","ms":16}
+{"label":"login","ms":132}
+{"label":"company list","ms":18}
+{"label":"dashboard 1 thn","ms":923}
+{"label":"dashboard 5 thn","ms":1034}
+{"label":"ledger BCA 5y","ms":47}
+{"label":"ledger BCA 1 bln","ms":38}
+{"label":"trial balance","ms":83}
+{"label":"income statement 1y","ms":33}
+{"label":"income statement 5y","ms":49}
+{"label":"balance sheet 5y","ms":125}
+{"label":"cash flow 5y","ms":662}
+{"label":"equity 5y","ms":96}
+{"label":"analysis","ms":79}
+{"label":"projection","ms":497}
+{"label":"search ref","ms":39}
+{"label":"search nominal","ms":51}
+{"label":"search teks","ms":43}
+{"label":"journal list","ms":24}
+{"label":"journal list search","ms":45}
+{"label":"audit log","ms":42}
+{"label":"counterparty balances","ms":31}
+{"label":"export balance-sheet 1 hari xlsx","ms":99}
+{"label":"export balance-sheet 1 hari pdf","ms":98}
+{"label":"export balance-sheet 1 bulan xlsx","ms":65}
+{"label":"export balance-sheet 1 bulan pdf","ms":81}
+{"label":"export balance-sheet 1 tahun xlsx","ms":95}
+{"label":"export balance-sheet 1 tahun pdf","ms":76}
+{"label":"export balance-sheet 5 tahun xlsx","ms":76}
+{"label":"export balance-sheet 5 tahun pdf","ms":134}
+{"label":"export income-statement 1 hari xlsx","ms":55}
+{"label":"export income-statement 1 hari pdf","ms":62}
+{"label":"export income-statement 1 bulan xlsx","ms":50}
+{"label":"export income-statement 1 bulan pdf","ms":55}
+{"label":"export income-statement 1 tahun xlsx","ms":45}
+{"label":"export income-statement 1 tahun pdf","ms":41}
+{"label":"export income-statement 5 tahun xlsx","ms":37}
+{"label":"export income-statement 5 tahun pdf","ms":73}
+{"label":"export equity 1 hari xlsx","ms":85}
+{"label":"export equity 1 hari pdf","ms":155}
+{"label":"export equity 1 bulan xlsx","ms":43}
+{"label":"export equity 1 bulan pdf","ms":70}
+{"label":"export equity 1 tahun xlsx","ms":55}
+{"label":"export equity 1 tahun pdf","ms":61}
+{"label":"export equity 5 tahun xlsx","ms":83}
+{"label":"export equity 5 tahun pdf","ms":52}
+{"label":"export cash-flow 1 hari xlsx","ms":51}
+{"label":"export cash-flow 1 hari pdf","ms":45}
+{"label":"export cash-flow 1 bulan xlsx","ms":106}
+{"label":"export cash-flow 1 bulan pdf","ms":83}
+{"label":"export cash-flow 1 tahun xlsx","ms":229}
+{"label":"export cash-flow 1 tahun pdf","ms":238}
+{"label":"export cash-flow 5 tahun xlsx","ms":673}
+{"label":"export cash-flow 5 tahun pdf","ms":631}
+{"label":"export trial-balance Des2025 xlsx","ms":80}
+{"label":"export trial-balance Des2025 pdf","ms":88}
+{"label":"export ledger BCA 5 tahun xlsx","ms":211}
+{"label":"export ledger BCA 5 tahun pdf","ms":332}
+{"label":"export ledger BCA 1 hari xlsx","ms":36}
+{"label":"export ledger BCA 1 hari pdf","ms":35}
+{"label":"export ledger Kas Metro 1 tahun xlsx","ms":36}
+{"label":"export ledger Kas Metro 1 tahun pdf","ms":88}
+{"label":"import besar preview 2000","ms":662}
+{"label":"import besar commit 2000","ms":3391}
+{"label":"backup","ms":44}

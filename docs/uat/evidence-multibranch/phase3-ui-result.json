@@ -1,0 +1,147 @@
+[
+ {
+  "name": "OWNER: kolom Akses Cabang & Wewenang Khusus tampil",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OWNER: tombol Delegasikan Wewenang & Tambah Pengguna tampil",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OWNER via UI: centang Metro -> akses tersimpan di server",
+  "pass": true,
+  "detail": "1"
+ },
+ {
+  "name": "OWNER via UI: override GRANT approve tersimpan",
+  "pass": true,
+  "detail": "GRANT"
+ },
+ {
+  "name": "OWNER via UI: hapus centang -> akses dicabut di server",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "form delegasi: penerima hanya ADMIN/ACCOUNTANT (STAFF tak muncul)",
+  "pass": true,
+  "detail": "Pilih pengguna... | Admin UAT (ADMIN) | Akuntan UAT (ACCOUNTANT) | Admin Cabang (ADMIN) | Admin Tanpa Delegasi (ADMIN) | Akuntan Pusat (ACCOUNTANT)"
+ },
+ {
+  "name": "form delegasi: 4 kapabilitas tetap, 2 ditandai 'disiapkan' (Phase 5/6)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "form delegasi: tidak ada opsi 'Semua cabang'",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "form delegasi: peran maksimum VIEWER/STAFF/ACCOUNTANT, tanpa ADMIN/OWNER",
+  "pass": true,
+  "detail": "VIEWER,STAFF,ACCOUNTANT"
+ },
+ {
+  "name": "OWNER via UI: delegasi tersimpan (manage_users, max_role STAFF, Metro+Bandar)",
+  "pass": true,
+  "detail": "{\"u\":1,\"i\":0,\"m\":\"STAFF\",\"s\":\"ACTIVE\",\"b\":\"4e411be8-1fd6-4bef-b732-8eceae1ee242,8c8d6620-3f39-4832-86d2-0163f72968a8\"}"
+ },
+ {
+  "name": "OWNER via UI: Cabut delegasi -> status REVOKED di server",
+  "pass": true,
+  "detail": "REVOKED"
+ },
+ {
+  "name": "OWNER: tidak ada error JavaScript di halaman",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "ADMIN berdelegasi: daftar tersaring (tanpa OWNER & user Kotabumi)",
+  "pass": true,
+  "detail": "Admin Cabang, Staf Metro, Staf Bandar"
+ },
+ {
+  "name": "ADMIN berdelegasi: tanpa Tambah Pengguna / Nonaktifkan / Cabut Akses / Delegasikan Wewenang",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "ADMIN berdelegasi: daftar centang hanya cabang delegasi (Metro + Bandar Lampung)",
+  "pass": true,
+  "detail": "Cabang Metro\nMETRO / Bandar Lampung\nBL"
+ },
+ {
+  "name": "ADMIN berdelegasi via UI: memberi akses Metro berhasil di server",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "delegasi dicabut saat UI masih terbuka: aksi berikutnya ditolak server (UI bukan lapisan keamanan)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "ADMIN berdelegasi: tidak ada error JavaScript fatal",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "ADMIN LIMITED tanpa delegasi: pesan 'tidak memiliki izin', tanpa tombol pengelolaan",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "STAFF: pesan 'tidak memiliki izin', tanpa tombol pengelolaan",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "selector: tampil pada perusahaan multi-cabang, menampilkan cabang aktif dari server (Kantor Pusat) dan cakupan",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "selector: daftar mencakup seluruh cabang yang sah",
+  "pass": true,
+  "detail": "5"
+ },
+ {
+  "name": "selector: pilihan Metro tersimpan sebagai preferensi di SERVER dan ditampilkan",
+  "pass": true,
+  "detail": "8c8d6620-3f39-4832-86d2-0163f72968a8"
+ },
+ {
+  "name": "selector: permintaan berikutnya membawa header X-Branch-Context = Metro",
+  "pass": true,
+  "detail": "[{\"url\":\"http://127.0.0.1:4512/api/company-db/pt-terra-nusantara/authorization/users\",\"method\":\"GET\",\"branch\":\"8c8d6620-3f39-4832-86d2-0163f72968a8\"},{\"url\":\"http://127.0.0.1:4512/api/company-db/pt-terra-nusantara/delegations\",\"method\":\"GET\",\"branch\":\"8c8d6620-3f39-4832-86d2-0163f72968a8\"},{\"url\":\"http://127.0.0.1:4512/api/company-db/pt-terra-nusantara/access\",\"method\":\"GET\",\"branch\":\"8c8d6620-3f39-4832-86d2-0163f72968a8\"}]"
+ },
+ {
+  "name": "selector: nilai localStorage palsu ditolak server; UI kembali ke konteks sah (Metro dari preferensi) dan memberi tahu",
+  "pass": true,
+  "detail": "Cabang Metro | null"
+ },
+ {
+  "name": "selector LIMITED: menampilkan cabang sah + cakupan terbatas",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "selector: perubahan akses saat sesi berjalan memunculkan pemberitahuan",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "selector LIMITED: hanya cabang dalam akses (Bandar Lampung, Metro)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "perusahaan pt-nama-panjang (multi-cabang mati): kolom cabang & selector TIDAK muncul, tampilan lama utuh",
+  "pass": true,
+  "detail": ""
+ }
+]

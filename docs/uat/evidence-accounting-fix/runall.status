@@ -1,0 +1,37 @@
+START s01_setup 2026-10-06T01:47:13.661Z
+END s01_setup exit=0
+START s02_data 2026-10-06T01:47:45.882Z
+END s02_data exit=0
+START s03_reconcile 2026-10-06T01:48:50.809Z
+END s03_reconcile exit=0
+START s04a_perf_export 2026-10-06T01:49:02.262Z
+END s04a_perf_export exit=0
+START s04b_functional 2026-10-06T01:49:12.614Z
+END s04b_functional exit=0
+START s04c_imports 2026-10-06T01:49:51.889Z
+END s04c_imports exit=0
+START s05a_security 2026-10-06T01:51:55.931Z
+END s05a_security exit=0
+START restart 2026-10-06T01:54:04.189Z
+END restart exit=0 healthy: true
+START s05b_security2 2026-10-06T01:54:09.082Z
+END s05b_security2 exit=0
+START s10_regression_high 2026-10-06T01:56:20.558Z
+END s10_regression_high exit=0
+START s11_remaining 2026-10-06T01:56:24.699Z
+END s11_remaining exit=0
+START restart 2026-10-06T01:57:20.579Z
+END restart exit=0 healthy: true
+START s12_hardening 2026-10-06T01:57:25.511Z
+END s12_hardening exit=0
+START s13_accounting_fix 2026-10-06T01:58:46.668Z
+END s13_accounting_fix exit=0
+START restart 2026-10-06T01:59:45.281Z
+END restart exit=0 healthy: true
+START s06_resilience 2026-10-06T01:59:50.185Z
+END s06_resilience exit=0
+START s07_ui 2026-10-06T02:00:38.166Z
+END s07_ui exit=0
+START s08_extra 2026-10-06T02:04:28.630Z
+END s08_extra exit=0
+ALL DONE

@@ -1,0 +1,10 @@
+import { Client, A, rec, state } from "./lib.mjs";
+const owner = new Client("o"); await owner.login("owner@terra-nusantara.test", "Uat#Owner2026");
+const acct = new Client("a"); await acct.login("akuntan@terra-nusantara.test", "Uat#Pass2026");
+rec("BUG-ACC-TOL", "accounting", "jurnal selisih Rp1 (toleransi pembulatan) yang diposting merusak Neraca/Dashboard (500) dan Trial Balance (tidak balance) untuk semua periode sesudahnya", false, "UJ-udxcd6j: debit 1000, kredit 999 -> Post 200; TB Feb-2026 selisih 1; Neraca & Dashboard HTTP 500 'Balance Sheet tidak seimbang'", "HIGH");
+const r = await acct.post(`${A()}/journal/reversal`, { referenceNo: "UJ-udxcd6j", entryDate: "2026-02-10", reason: "UAT: pemulihan data uji" }); console.log("reversal", r.status);
+const per = state().per;
+const tb = await owner.get(`${A()}/trial-balance?periodId=${per["2026-02"]}`); const bs = await owner.get(`${A()}/reports/balance-sheet?fromDate=2021-01-01&toDate=2026-02-28`); const d = await owner.get(`${A()}/dashboard?fromDate=2026-02-01&toDate=2026-02-28`);
+rec("BUG-ACC-TOL-recover", "accounting", "setelah reversal, TB/Neraca/Dashboard pulih", tb.json?.isBalanced === true && bs.status === 200 && d.status === 200, `${tb.json?.isBalanced} ${bs.status} ${d.status}`, "INFO");
+const b = await owner.get("/api/benchmark?from=2025-01-01&to=2025-12-31"); rec("MN-bm2", "menu", "menu Benchmark dengan rentang tanggal", b.status === 200, `status ${b.status} ${JSON.stringify(b.json).slice(0, 80)}`);
+process.exit(0);

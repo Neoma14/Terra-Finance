@@ -1,0 +1,362 @@
+{
+ "machine": {
+  "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+  "cores": 18,
+  "memGB": 17,
+  "node": "v22.23.2",
+  "sqlite": "3.49.2 (better-sqlite3 11.10)"
+ },
+ "runs": {
+  "small": {
+   "cpuLoadBefore": 34,
+   "endpoints": {
+    "balance-sheet": {
+     "status": 200,
+     "bytes": 2430,
+     "minMs": 44,
+     "medianMs": 49,
+     "p95Ms": 60,
+     "maxMs": 60
+    },
+    "income-statement": {
+     "status": 200,
+     "bytes": 2047,
+     "minMs": 18,
+     "medianMs": 29,
+     "p95Ms": 38,
+     "maxMs": 38
+    },
+    "equity": {
+     "status": 200,
+     "bytes": 167,
+     "minMs": 25,
+     "medianMs": 33,
+     "p95Ms": 37,
+     "maxMs": 37
+    },
+    "cash-flow": {
+     "status": 200,
+     "bytes": 352,
+     "minMs": 60,
+     "medianMs": 83,
+     "p95Ms": 98,
+     "maxMs": 98
+    },
+    "trial-balance": {
+     "status": 200,
+     "bytes": 2783,
+     "minMs": 39,
+     "medianMs": 54,
+     "p95Ms": 82,
+     "maxMs": 82
+    },
+    "ledger": {
+     "status": 200,
+     "bytes": 39902,
+     "minMs": 14,
+     "medianMs": 16,
+     "p95Ms": 48,
+     "maxMs": 48
+    },
+    "dashboard": {
+     "status": 200,
+     "bytes": 5016,
+     "minMs": 246,
+     "medianMs": 280,
+     "p95Ms": 325,
+     "maxMs": 325
+    },
+    "counterparty-balances": {
+     "status": 200,
+     "bytes": 1466,
+     "minMs": 11,
+     "medianMs": 23,
+     "p95Ms": 46,
+     "maxMs": 46
+    },
+    "search": {
+     "status": 200,
+     "bytes": 1848,
+     "minMs": 15,
+     "medianMs": 25,
+     "p95Ms": 33,
+     "maxMs": 33
+    },
+    "analysis": {
+     "status": 200,
+     "bytes": 778,
+     "minMs": 36,
+     "medianMs": 46,
+     "p95Ms": 65,
+     "maxMs": 65
+    },
+    "projection": {
+     "status": 200,
+     "bytes": 1253,
+     "minMs": 201,
+     "medianMs": 234,
+     "p95Ms": 278,
+     "maxMs": 278
+    },
+    "tax-summary": {
+     "status": 200,
+     "bytes": 281,
+     "minMs": 16,
+     "medianMs": 30,
+     "p95Ms": 41,
+     "maxMs": 41
+    },
+    "journals(p1)": {
+     "status": 200,
+     "bytes": 13949,
+     "minMs": 10,
+     "medianMs": 14,
+     "p95Ms": 23,
+     "maxMs": 23
+    },
+    "branch-context(baseline overhead)": {
+     "status": 200,
+     "bytes": 720,
+     "minMs": 10,
+     "medianMs": 17,
+     "p95Ms": 24,
+     "maxMs": 24
+    }
+   }
+  },
+  "uat-1": {
+   "cpuLoadBefore": 34,
+   "endpoints": {
+    "balance-sheet": {
+     "status": 200,
+     "bytes": 3838,
+     "minMs": 105,
+     "medianMs": 120,
+     "p95Ms": 134,
+     "maxMs": 134
+    },
+    "income-statement": {
+     "status": 200,
+     "bytes": 882,
+     "minMs": 46,
+     "medianMs": 60,
+     "p95Ms": 74,
+     "maxMs": 74
+    },
+    "equity": {
+     "status": 200,
+     "bytes": 167,
+     "minMs": 72,
+     "medianMs": 86,
+     "p95Ms": 104,
+     "maxMs": 104
+    },
+    "cash-flow": {
+     "status": 200,
+     "bytes": 336,
+     "minMs": 820,
+     "medianMs": 874,
+     "p95Ms": 977,
+     "maxMs": 977
+    },
+    "trial-balance": {
+     "status": 200,
+     "bytes": 3522,
+     "minMs": 83,
+     "medianMs": 101,
+     "p95Ms": 135,
+     "maxMs": 135
+    },
+    "ledger": {
+     "status": 200,
+     "bytes": 856877,
+     "minMs": 38,
+     "medianMs": 51,
+     "p95Ms": 62,
+     "maxMs": 62
+    },
+    "dashboard": {
+     "status": 200,
+     "bytes": 4291,
+     "minMs": 2128,
+     "medianMs": 2392,
+     "p95Ms": 2648,
+     "maxMs": 2648
+    },
+    "counterparty-balances": {
+     "status": 200,
+     "bytes": 1466,
+     "minMs": 31,
+     "medianMs": 40,
+     "p95Ms": 53,
+     "maxMs": 53
+    },
+    "search": {
+     "status": 200,
+     "bytes": 1784,
+     "minMs": 47,
+     "medianMs": 59,
+     "p95Ms": 146,
+     "maxMs": 146
+    },
+    "analysis": {
+     "status": 200,
+     "bytes": 729,
+     "minMs": 102,
+     "medianMs": 122,
+     "p95Ms": 178,
+     "maxMs": 178
+    },
+    "projection": {
+     "status": 200,
+     "bytes": 1025,
+     "minMs": 1274,
+     "medianMs": 1384,
+     "p95Ms": 1577,
+     "maxMs": 1577
+    },
+    "tax-summary": {
+     "status": 200,
+     "bytes": 279,
+     "minMs": 39,
+     "medianMs": 51,
+     "p95Ms": 64,
+     "maxMs": 64
+    },
+    "journals(p1)": {
+     "status": 200,
+     "bytes": 13751,
+     "minMs": 14,
+     "medianMs": 20,
+     "p95Ms": 30,
+     "maxMs": 30
+    },
+    "branch-context(baseline overhead)": {
+     "status": 200,
+     "bytes": 720,
+     "minMs": 8,
+     "medianMs": 13,
+     "p95Ms": 35,
+     "maxMs": 35
+    }
+   }
+  },
+  "uat-7": {
+   "cpuLoadBefore": 1,
+   "endpoints": {
+    "balance-sheet": {
+     "status": 200,
+     "bytes": 3838,
+     "minMs": 104,
+     "medianMs": 116,
+     "p95Ms": 141,
+     "maxMs": 141
+    },
+    "income-statement": {
+     "status": 200,
+     "bytes": 882,
+     "minMs": 60,
+     "medianMs": 75,
+     "p95Ms": 88,
+     "maxMs": 88
+    },
+    "equity": {
+     "status": 200,
+     "bytes": 167,
+     "minMs": 66,
+     "medianMs": 74,
+     "p95Ms": 92,
+     "maxMs": 92
+    },
+    "cash-flow": {
+     "status": 200,
+     "bytes": 336,
+     "minMs": 799,
+     "medianMs": 851,
+     "p95Ms": 1007,
+     "maxMs": 1007
+    },
+    "trial-balance": {
+     "status": 200,
+     "bytes": 3522,
+     "minMs": 93,
+     "medianMs": 100,
+     "p95Ms": 114,
+     "maxMs": 114
+    },
+    "ledger": {
+     "status": 200,
+     "bytes": 856877,
+     "minMs": 37,
+     "medianMs": 56,
+     "p95Ms": 79,
+     "maxMs": 79
+    },
+    "dashboard": {
+     "status": 200,
+     "bytes": 4398,
+     "minMs": 2202,
+     "medianMs": 2289,
+     "p95Ms": 2460,
+     "maxMs": 2460
+    },
+    "counterparty-balances": {
+     "status": 200,
+     "bytes": 1466,
+     "minMs": 30,
+     "medianMs": 34,
+     "p95Ms": 52,
+     "maxMs": 52
+    },
+    "search": {
+     "status": 200,
+     "bytes": 1784,
+     "minMs": 51,
+     "medianMs": 56,
+     "p95Ms": 73,
+     "maxMs": 73
+    },
+    "analysis": {
+     "status": 200,
+     "bytes": 729,
+     "minMs": 101,
+     "medianMs": 112,
+     "p95Ms": 129,
+     "maxMs": 129
+    },
+    "projection": {
+     "status": 200,
+     "bytes": 1025,
+     "minMs": 1239,
+     "medianMs": 1357,
+     "p95Ms": 1568,
+     "maxMs": 1568
+    },
+    "tax-summary": {
+     "status": 200,
+     "bytes": 279,
+     "minMs": 41,
+     "medianMs": 52,
+     "p95Ms": 85,
+     "maxMs": 85
+    },
+    "journals(p1)": {
+     "status": 200,
+     "bytes": 13740,
+     "minMs": 12,
+     "medianMs": 17,
+     "p95Ms": 35,
+     "maxMs": 35
+    },
+    "branch-context(baseline overhead)": {
+     "status": 200,
+     "bytes": 2356,
+     "minMs": 13,
+     "medianMs": 22,
+     "p95Ms": 45,
+     "maxMs": 45
+    }
+   }
+  }
+ }
+}

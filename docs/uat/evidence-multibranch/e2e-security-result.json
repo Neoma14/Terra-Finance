@@ -1,0 +1,187 @@
+[
+ {
+  "name": "login pemilik",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "hanya OWNER: multi-cabang menyala",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "3 cabang dibuat",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "user baru diberi akses perusahaan",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "user baru otomatis LIMITED saat multi-cabang aktif (fail-closed)",
+  "pass": true,
+  "detail": "LIMITED"
+ },
+ {
+  "name": "login staf",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "staf tanpa cabang: tidak ada konteks",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "staf tanpa cabang: tulis jurnal ditolak 403 BRANCH_CONTEXT_INVALID",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "pemilik memberi akses Metro",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "staf kini punya konteks Metro dan hanya melihat Metro",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "staf membuat jurnal -> masuk cabang Metro",
+  "pass": true,
+  "detail": "201 {\"success\":true,\"journalId\":\"9c13c7dd-b778-468a-8cbc-d89af87e93ec\",\"status\":\"DRAFT\"}"
+ },
+ {
+  "name": "jurnal tersimpan dengan branch_id Metro, origin manual",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "TAMPERING branchId (cabang di luar akses) -> 404",
+  "pass": true,
+  "detail": "404"
+ },
+ {
+  "name": "TAMPERING header konteks -> 403 BRANCH_CONTEXT_INVALID",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "TAMPERING ke Kantor Pusat -> 404",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "IDOR cabang: cabang lain & tidak-ada tak terbedakan (404 identik)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "IDOR jurnal Pusat oleh staf Metro: baca/post/reverse -> 404",
+  "pass": true,
+  "detail": "404/404/404"
+ },
+ {
+  "name": "daftar jurnal ?branchId=Pusat oleh staf Metro -> 404",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "LIMITED ditolak di laporan/dashboard/search/ledger/export/audit-log (deny by default)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "staf tidak punya akses perusahaan lain (pt-pembanding) -> 404",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "id cabang perusahaan A dipakai di perusahaan B -> ditolak (tidak 201)",
+  "pass": true,
+  "detail": "404"
+ },
+ {
+  "name": "staf tidak dapat mengubah kebijakan akun (403)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OWNER mengubah kebijakan akun menjadi CENTRAL_ONLY",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "jurnal staf Metro ke akun CENTRAL_ONLY ditolak 400 ACCOUNT_POLICY_VIOLATION",
+  "pass": true,
+  "detail": "400 {\"error\":\"Akun \\\"1112 - Kas Cabang Metro\\\" hanya boleh dipakai pada jurnal Kantor Pusat (kebijakan CENTRAL_ONLY), bukan cabang \\\"Cabang Metro\\\".\",\"code\":\"ACCOUNT_POLICY_VIOLATION\",\"accountCode\":\"1112\""
+ },
+ {
+  "name": "jurnal Kantor Pusat ke akun CENTRAL_ONLY diterima",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "INTER_BRANCH dengan counterpart palsu/lintas perusahaan ditolak 400",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "pembuatan terpandu: preview tidak membuat akun",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "tanpa konfirmasi ditolak",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "dengan konfirmasi: 2 akun INTER_BRANCH dibuat",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "akun IBP-BL menunjuk Bandar Lampung sebagai cabang lawan (dari kolom, bukan nama)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "jurnal manual ke akun INTER_BRANCH ditolak 400",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "akses dicabut -> request berikutnya ditolak seketika (sesi masih hidup)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "cabang kosong dapat ditutup dengan alasan",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "cabang CLOSED menolak jurnal manual (403)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "historis cabang CLOSED tetap dapat dibaca (200)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "hard delete cabang CLOSED tidak ada: soft delete OWNER hanya cabang tak terpakai (akses aktif -> 409)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "origin guard: Origin asing ke route cabang ditolak 403",
+  "pass": true,
+  "detail": "403"
+ }
+]

@@ -1,0 +1,209 @@
+@import "./theme/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: rgb(var(--ink));
+  background: rgb(var(--bg));
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+::selection {
+  background: rgb(var(--accent));
+  color: white;
+}
+
+/* Float halus dipakai ilustrasi brand login (components/terra-illustration.tsx)
+   -- amplitudo kecil & durasi panjang sengaja supaya "premium", bukan norak. */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Transisi Morphing/Shared Element antar halaman (login->dashboard) & antar
+   menu sidebar -- pakai View Transitions API BAWAAN browser (dipicu React
+   Router lewat prop `viewTransition`), BUKAN library baru. Elemen yang diberi
+   nama sama (.vt-page-title, "nav-active") otomatis di-morph halus antara
+   posisi/ukuran lama & baru oleh browser sendiri. Browser yang belum dukung
+   API ini (Firefox versi lama, dll) otomatis fallback ke transisi instan
+   tanpa kode tambahan -- aman di semua browser. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.32s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(nav-active),
+::view-transition-new(nav-active) {
+  animation-duration: 0.28s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+::view-transition-old(page-title),
+::view-transition-new(page-title) {
+  animation-duration: 0.24s;
+}
+
+::view-transition-old(terra-logo),
+::view-transition-new(terra-logo) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vt-page-title {
+  view-transition-name: page-title;
+}
+
+.vt-terra-logo {
+  view-transition-name: terra-logo;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgb(var(--line));
+  border-radius: 999px;
+}
+
+/* Input/select/date native chrome: paksa ikut token tema secara eksplisit
+   supaya tidak pernah jatuh ke gaya dark-mode bawaan browser yang bisa
+   bentrok dengan warna teks kita sendiri (ini akar masalah "tulisan tidak
+   terlihat" -- browser me-render <select>/<input> dengan warna native saat
+   OS dalam mode gelap kalau color-scheme halaman tidak dideklarasikan). */
+input,
+select,
+textarea {
+  color-scheme: inherit;
+}
+
+@layer components {
+  .input-base {
+    @apply rounded-lg border border-line bg-surface px-2.5 py-2 text-sm text-ink outline-none transition-all duration-200 focus:border-cyan-500 focus:outline focus:outline-2 focus:outline-cyan-500;
+  }
+
+  /* Glass surface dipakai di sidebar & panel gelap (login kiri, dsb) --
+     SUBTLE sengaja (blur kecil, border tipis) supaya tetap "professional/
+     readable", bukan efek kaca tebal ala mockup dribbble. Rentang opacity
+     0.06-0.10 persis spesifikasi "Premium Theme System". */
+  .glass-dark {
+    @apply border border-white/10 bg-white/[0.07] backdrop-blur-xl transition-colors duration-200;
+  }
+
+  /* Glass surface dipakai di atas permukaan terang (card KPI, modal) --
+     "white frosted glass" (opacity 0.65-0.85), bukan putih transparan biasa. */
+  .glass-light {
+    @apply border border-white/50 bg-white/70 backdrop-blur-md transition-colors duration-200 dark:border-white/10 dark:bg-white/[0.07];
+  }
+}
+
+/* Print laporan: sembunyikan semua elemen halaman KECUALI yang ada di
+   dalam .print-area (sidebar, tombol, tab switcher semua ikut hilang
+   otomatis karena mereka di luar .print-area) -- dipakai fitur "Print /
+   Simpan PDF" di tab Laporan dashboard lewat window.print() native browser
+   (rute paling portable ke PDF, tidak perlu library tambahan). Elemen di
+   dalam print-area sendiri yang tidak boleh ikut tercetak (tombol aksi
+   inline) diberi class .no-print. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+  .no-print {
+    display: none !important;
+  }
+  /* Tanpa ini, Chrome/Edge/Firefox DEFAULT menghapus semua warna background
+     saat print (hemat tinta) -- band navy/biru muda di PrintStatementReport
+     & letterhead jadi putih polos kalau tidak dipaksa. */
+  .print-area,
+  .print-area * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Default ukuran kertas A4 -- browser (Chrome/Edge/Firefox) tetap
+     menampilkan dropdown ukuran kertas di dialog print/PDF, jadi user masih
+     bisa ganti manual ke Letter/Legal/dll kalau perlu; ini cuma pilihan
+     AWAL supaya tidak perlu diubah manual tiap kali untuk kasus umum. */
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  /* Tabel laporan (Buku Besar, Chart of Accounts, Kartu Hutang/Piutang, dll)
+     dipakai APA ADANYA dari tampilan layar (kelas Tailwind px-5 py-2 dst,
+     dibuat untuk kenyamanan klik di layar) -- utk cetak/PDF itu jadi terlalu
+     lega & borosan halaman. Kecilkan font & padding sel secara GLOBAL disini
+     (bukan per halaman) supaya konsisten & elegan/minimalis di semua
+     laporan tabel, tanpa perlu ganti className di tiap halaman. */
+  .print-area table {
+    font-size: 9.5px !important;
+  }
+  .print-area th,
+  .print-area td {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+  .print-area .grid,
+  .print-area.flex {
+    gap: 8px !important;
+  }
+  /* Kartu KPI (Saldo Awal/Debit/Kredit/Saldo Akhir dsb) -- padding & angka
+     besarnya dibuat utk layar, terlalu boros di kertas. */
+  .print-area .p-5 {
+    padding: 8px !important;
+  }
+  .print-area .text-xl,
+  .print-area .text-2xl {
+    font-size: 13px !important;
+  }
+  .print-area .mb-2 {
+    margin-bottom: 2px !important;
+  }
+  /* Kartu Rasio (ratios-page.tsx) yang sedang "dipilih" (untuk grafik tren
+     di layar) pakai ring/border cyan -- state interaktif ini TIDAK relevan
+     di kertas (tidak ada "yang sedang diklik" di dokumen cetak), jadi
+     dipaksa netral supaya semua kartu terlihat setara. */
+  .print-area .no-print-ring {
+    box-shadow: none !important;
+    border-color: #e5e9ee !important;
+  }
+  /* Nilai rasio dipaksa navy solid saat cetak (bukan token adaptif dark
+     mode) -- konsisten dgn prinsip warna literal utk hasil cetak. */
+  .print-area .ratio-value {
+    color: #091f46 !important;
+  }
+}

@@ -1,0 +1,35 @@
+START s01_setup 2026-10-05T18:17:39.025Z
+END s01_setup exit=0
+START s02_data 2026-10-05T18:18:18.596Z
+END s02_data exit=0
+START s03_reconcile 2026-10-05T18:19:25.376Z
+END s03_reconcile exit=0
+START s04a_perf_export 2026-10-05T18:19:39.302Z
+END s04a_perf_export exit=0
+START s04b_functional 2026-10-05T18:19:52.201Z
+END s04b_functional exit=0
+START s04c_imports 2026-10-05T18:20:25.267Z
+END s04c_imports exit=0
+START s05a_security 2026-10-05T18:22:29.904Z
+END s05a_security exit=0
+START restart 2026-10-05T18:24:39.390Z
+END restart exit=0 healthy: true
+START s05b_security2 2026-10-05T18:24:45.234Z
+END s05b_security2 exit=0
+START s10_regression_high 2026-10-05T18:26:57.919Z
+END s10_regression_high exit=0
+START s11_remaining 2026-10-05T18:27:03.075Z
+END s11_remaining exit=0
+START restart 2026-10-05T18:27:57.156Z
+END restart exit=0 healthy: true
+START s12_hardening 2026-10-05T18:28:02.093Z
+END s12_hardening exit=0
+START restart 2026-10-05T18:29:22.810Z
+END restart exit=0 healthy: true
+START s06_resilience 2026-10-05T18:29:28.164Z
+END s06_resilience exit=0
+START s07_ui 2026-10-05T18:30:22.950Z
+END s07_ui exit=0
+START s08_extra 2026-10-05T18:34:14.818Z
+END s08_extra exit=0
+ALL DONE

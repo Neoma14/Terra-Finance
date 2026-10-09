@@ -1,0 +1,768 @@
+{
+ "before": {
+  "system": {
+   "sizeBytes": 188416,
+   "companyAccess": 11,
+   "scopes": "(belum ada kolom)",
+   "hasUserBranchAccess": false,
+   "integrity": [
+    "ok"
+   ],
+   "foreignKeyViolations": 0
+  },
+  "companies": {
+   "pt-nama-panjang": {
+    "sizeBytes": 192512,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": "(belum ada tabel)",
+    "journalsWithoutBranch": "-",
+    "journalsNotHq": "-",
+    "nonDefaultPolicies": "-",
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "pt-pembanding": {
+    "sizeBytes": 200704,
+    "journals": 3,
+    "lines": 6,
+    "accounts": 3,
+    "periods": 12,
+    "auditRows": 22,
+    "debitCents": 1500000000,
+    "creditCents": 1500000000,
+    "branches": "(belum ada tabel)",
+    "journalsWithoutBranch": "-",
+    "journalsNotHq": "-",
+    "nonDefaultPolicies": "-",
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e4b36cd4be454cdc719d6416dbc5bf15f0e027b08eecf4757cb08d26b591a118",
+    "accountsHash": "db7870eab9be90f7f62dcaeb6d08787e6b2b8e43bf5f4abceb47579c11375e3d",
+    "journalsHash": "33073edbb14659b8a90a27c6690e76f00629403c1e62260f0ce915b9ee80df07"
+   },
+   "pt-terra-nusantara": {
+    "sizeBytes": 24264704,
+    "journals": 12003,
+    "lines": 30976,
+    "accounts": 66,
+    "periods": 72,
+    "auditRows": 24126,
+    "debitCents": 902018941504626200,
+    "creditCents": 902018941504626000,
+    "branches": "(belum ada tabel)",
+    "journalsWithoutBranch": "-",
+    "journalsNotHq": "-",
+    "nonDefaultPolicies": "-",
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "3aa5751156d3ae8461b59c1c56d479a31d0b34c066151a66daf4b6cf389e6749",
+    "accountsHash": "c1101889eb37bba84098edece8a09790079dda987d58205de6f5ea5fae0860c5",
+    "journalsHash": "74427b61bc388b7b70d43df44c63087087ec66b92072b9caef6b002d9e6e5bbd"
+   },
+   "pt-uji-tambah": {
+    "sizeBytes": 192512,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": "(belum ada tabel)",
+    "journalsWithoutBranch": "-",
+    "journalsNotHq": "-",
+    "nonDefaultPolicies": "-",
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "pt-xss-uji": {
+    "sizeBytes": 192512,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": "(belum ada tabel)",
+    "journalsWithoutBranch": "-",
+    "journalsNotHq": "-",
+    "nonDefaultPolicies": "-",
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "viewer-co": {
+    "sizeBytes": 192512,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": "(belum ada tabel)",
+    "journalsWithoutBranch": "-",
+    "journalsNotHq": "-",
+    "nonDefaultPolicies": "-",
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   }
+  }
+ },
+ "after": {
+  "system": {
+   "sizeBytes": 212992,
+   "companyAccess": 11,
+   "scopes": [
+    {
+     "branch_scope": "ALL",
+     "c": 11
+    }
+   ],
+   "hasUserBranchAccess": true,
+   "integrity": [
+    "ok"
+   ],
+   "foreignKeyViolations": 0
+  },
+  "companies": {
+   "pt-nama-panjang": {
+    "sizeBytes": 241664,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": 1,
+    "journalsWithoutBranch": 0,
+    "journalsNotHq": 0,
+    "nonDefaultPolicies": 0,
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "pt-pembanding": {
+    "sizeBytes": 249856,
+    "journals": 3,
+    "lines": 6,
+    "accounts": 3,
+    "periods": 12,
+    "auditRows": 22,
+    "debitCents": 1500000000,
+    "creditCents": 1500000000,
+    "branches": 1,
+    "journalsWithoutBranch": 0,
+    "journalsNotHq": 0,
+    "nonDefaultPolicies": 0,
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e4b36cd4be454cdc719d6416dbc5bf15f0e027b08eecf4757cb08d26b591a118",
+    "accountsHash": "db7870eab9be90f7f62dcaeb6d08787e6b2b8e43bf5f4abceb47579c11375e3d",
+    "journalsHash": "33073edbb14659b8a90a27c6690e76f00629403c1e62260f0ce915b9ee80df07"
+   },
+   "pt-terra-nusantara": {
+    "sizeBytes": 25927680,
+    "journals": 12003,
+    "lines": 30976,
+    "accounts": 66,
+    "periods": 72,
+    "auditRows": 24126,
+    "debitCents": 902018941504626200,
+    "creditCents": 902018941504626000,
+    "branches": 1,
+    "journalsWithoutBranch": 0,
+    "journalsNotHq": 0,
+    "nonDefaultPolicies": 0,
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "3aa5751156d3ae8461b59c1c56d479a31d0b34c066151a66daf4b6cf389e6749",
+    "accountsHash": "c1101889eb37bba84098edece8a09790079dda987d58205de6f5ea5fae0860c5",
+    "journalsHash": "74427b61bc388b7b70d43df44c63087087ec66b92072b9caef6b002d9e6e5bbd"
+   },
+   "pt-uji-tambah": {
+    "sizeBytes": 241664,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": 1,
+    "journalsWithoutBranch": 0,
+    "journalsNotHq": 0,
+    "nonDefaultPolicies": 0,
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "pt-xss-uji": {
+    "sizeBytes": 241664,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": 1,
+    "journalsWithoutBranch": 0,
+    "journalsNotHq": 0,
+    "nonDefaultPolicies": 0,
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "viewer-co": {
+    "sizeBytes": 241664,
+    "journals": 0,
+    "lines": 0,
+    "accounts": 0,
+    "periods": 0,
+    "auditRows": 0,
+    "debitCents": 0,
+    "creditCents": 0,
+    "branches": 1,
+    "journalsWithoutBranch": 0,
+    "journalsNotHq": 0,
+    "nonDefaultPolicies": 0,
+    "integrity": [
+     "ok"
+    ],
+    "foreignKeyViolations": 0,
+    "linesHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accountsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "journalsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   }
+  }
+ },
+ "backups": [
+  "terra-system.sqlite.pre-S0011",
+  "companies\\pt-nama-panjang\\company.db.pre-C0014",
+  "companies\\pt-nama-panjang\\company.db.pre-upgrade",
+  "companies\\pt-pembanding\\company.db.pre-C0014",
+  "companies\\pt-pembanding\\company.db.pre-upgrade",
+  "companies\\pt-terra-nusantara\\company.db.pre-C0014",
+  "companies\\pt-terra-nusantara\\company.db.pre-upgrade",
+  "companies\\pt-uji-tambah\\company.db.pre-C0014",
+  "companies\\pt-uji-tambah\\company.db.pre-upgrade",
+  "companies\\pt-xss-uji\\company.db.pre-C0014",
+  "companies\\pt-xss-uji\\company.db.pre-upgrade",
+  "companies\\viewer-co\\company.db.pre-C0014",
+  "companies\\viewer-co\\company.db.pre-upgrade"
+ ],
+ "api": {
+  "loginStatus": 200,
+  "branchContext": {
+   "status": 200,
+   "multiBranchEnabled": false,
+   "scope": "ALL",
+   "branches": [
+    "PUSAT"
+   ],
+   "context": "PUSAT"
+  },
+  "journalsList": {
+   "status": 200,
+   "total": 12003,
+   "firstHasBranchId": true
+  },
+  "balanceSheet": {
+   "status": 200,
+   "isBalanced": true,
+   "totalAssets": 32834010999,
+   "totalLiabilities": 3733488000,
+   "totalEquity": 29100522999
+  },
+  "accountsList": {
+   "status": 200,
+   "hasBranchPolicy": "ALL_BRANCH"
+  },
+  "dashboard": {
+   "status": 200
+  },
+  "openingBalance": {
+   "status": 200,
+   "exists": true,
+   "branchId": true
+  }
+ },
+ "checks": [
+  {
+   "name": "server sehat setelah migrasi otomatis",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: jumlah jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-nama-panjang: jumlah baris jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-nama-panjang: jumlah akun sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-nama-panjang: jumlah periode sama",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: total debit/kredit (sen) sama",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-nama-panjang: isi baris jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: isi akun identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: header jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: 1 cabang (Kantor Pusat), tidak ada jurnal tanpa/bukan Pusat",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: semua akun ALL_BRANCH",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: integrity_check ok sebelum & sesudah",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-nama-panjang: foreign_key_check bersih sebelum & sesudah",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-nama-panjang: salinan pengaman .pre-C0014 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: jumlah jurnal sama",
+   "pass": true,
+   "detail": "3 -> 3"
+  },
+  {
+   "name": "pt-pembanding: jumlah baris jurnal sama",
+   "pass": true,
+   "detail": "6 -> 6"
+  },
+  {
+   "name": "pt-pembanding: jumlah akun sama",
+   "pass": true,
+   "detail": "3 -> 3"
+  },
+  {
+   "name": "pt-pembanding: jumlah periode sama",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: total debit/kredit (sen) sama",
+   "pass": true,
+   "detail": "1500000000/1500000000"
+  },
+  {
+   "name": "pt-pembanding: isi baris jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: isi akun identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: header jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: 1 cabang (Kantor Pusat), tidak ada jurnal tanpa/bukan Pusat",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: semua akun ALL_BRANCH",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: integrity_check ok sebelum & sesudah",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-pembanding: foreign_key_check bersih sebelum & sesudah",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-pembanding: salinan pengaman .pre-C0014 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: jumlah jurnal sama",
+   "pass": true,
+   "detail": "12003 -> 12003"
+  },
+  {
+   "name": "pt-terra-nusantara: jumlah baris jurnal sama",
+   "pass": true,
+   "detail": "30976 -> 30976"
+  },
+  {
+   "name": "pt-terra-nusantara: jumlah akun sama",
+   "pass": true,
+   "detail": "66 -> 66"
+  },
+  {
+   "name": "pt-terra-nusantara: jumlah periode sama",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: total debit/kredit (sen) sama",
+   "pass": true,
+   "detail": "902018941504626200/902018941504626000"
+  },
+  {
+   "name": "pt-terra-nusantara: isi baris jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: isi akun identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: header jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: 1 cabang (Kantor Pusat), tidak ada jurnal tanpa/bukan Pusat",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: semua akun ALL_BRANCH",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: integrity_check ok sebelum & sesudah",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-terra-nusantara: foreign_key_check bersih sebelum & sesudah",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-terra-nusantara: salinan pengaman .pre-C0014 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: jumlah jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-uji-tambah: jumlah baris jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-uji-tambah: jumlah akun sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-uji-tambah: jumlah periode sama",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: total debit/kredit (sen) sama",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-uji-tambah: isi baris jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: isi akun identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: header jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: 1 cabang (Kantor Pusat), tidak ada jurnal tanpa/bukan Pusat",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: semua akun ALL_BRANCH",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: integrity_check ok sebelum & sesudah",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-uji-tambah: foreign_key_check bersih sebelum & sesudah",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-uji-tambah: salinan pengaman .pre-C0014 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: jumlah jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-xss-uji: jumlah baris jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-xss-uji: jumlah akun sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "pt-xss-uji: jumlah periode sama",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: total debit/kredit (sen) sama",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-xss-uji: isi baris jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: isi akun identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: header jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: 1 cabang (Kantor Pusat), tidak ada jurnal tanpa/bukan Pusat",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: semua akun ALL_BRANCH",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: integrity_check ok sebelum & sesudah",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "pt-xss-uji: foreign_key_check bersih sebelum & sesudah",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "pt-xss-uji: salinan pengaman .pre-C0014 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: jumlah jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "viewer-co: jumlah baris jurnal sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "viewer-co: jumlah akun sama",
+   "pass": true,
+   "detail": "0 -> 0"
+  },
+  {
+   "name": "viewer-co: jumlah periode sama",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: total debit/kredit (sen) sama",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "viewer-co: isi baris jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: isi akun identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: header jurnal identik (hash)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: 1 cabang (Kantor Pusat), tidak ada jurnal tanpa/bukan Pusat",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: semua akun ALL_BRANCH",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: integrity_check ok sebelum & sesudah",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "viewer-co: foreign_key_check bersih sebelum & sesudah",
+   "pass": true,
+   "detail": "0/0"
+  },
+  {
+   "name": "viewer-co: salinan pengaman .pre-C0014 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "System DB: user lama semua scope ALL",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "System DB: tabel user_branch_access ada, integritas ok",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "System DB: salinan pengaman .pre-S0011 ada",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "API: login & branch-context (ALL, konteks Kantor Pusat, multi-cabang mati)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "API: daftar jurnal dan laporan tetap berfungsi, Neraca seimbang",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "serverLogTail": [
+  "[company-upgrade] pt-nama-panjang: 5 migration diterapkan (integritas OK).",
+  "[company-upgrade] pt-pembanding: 5 migration diterapkan (integritas OK).",
+  "[company-upgrade] pt-terra-nusantara: 5 migration diterapkan (integritas OK).",
+  "[company-upgrade] pt-uji-tambah: 5 migration diterapkan (integritas OK).",
+  "[company-upgrade] pt-xss-uji: 5 migration diterapkan (integritas OK).",
+  "[company-upgrade] viewer-co: 5 migration diterapkan (integritas OK)."
+ ]
+}

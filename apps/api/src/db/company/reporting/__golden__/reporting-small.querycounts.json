@@ -1,0 +1,14 @@
+{
+ "phase": "5.0",
+ "note": "Batas atas jumlah query pada dataset golden (17 akun, 3 cabang). 5A tidak boleh menaikkan; 5B boleh menurunkan.",
+ "counts": {
+  "balanceSheet": 39,
+  "incomeStatement": 9,
+  "equity": 26,
+  "cashFlow": 90,
+  "trialBalance": 59,
+  "ledger": 6,
+  "counterparties": 2,
+  "dashboard": 428
+ }
+}

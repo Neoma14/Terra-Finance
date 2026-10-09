@@ -1,0 +1,2027 @@
+{
+ "dataset": "uat-7",
+ "branches": [
+  {
+   "id": "7c3d906b-7026-4323-afc4-3afeb4f2c8ec",
+   "code": "PUSAT",
+   "name": "Kantor Pusat"
+  },
+  {
+   "id": "f195055d-024d-49ee-a28f-9644b9e9fd73",
+   "code": "METRO",
+   "name": "Cabang Metro"
+  },
+  {
+   "id": "a9ebed42-ce33-49e5-b54e-ca01822a0dcf",
+   "code": "BL",
+   "name": "Bandar Lampung"
+  },
+  {
+   "id": "345ac336-f08a-4091-b454-79b0c7e3e611",
+   "code": "KOTABUMI",
+   "name": "Cabang Kotabumi"
+  },
+  {
+   "id": "d79603c6-85e9-451d-a317-635c3d08f016",
+   "code": "PRINGSEWU",
+   "name": "Cabang Pringsewu"
+  },
+  {
+   "id": "bcfd1577-d0d3-4dcd-bfda-5d76e361bd55",
+   "code": "LIWA",
+   "name": "Cabang Liwa"
+  },
+  {
+   "id": "4172ba3b-3580-40b1-879e-77451ac3893e",
+   "code": "BALIK",
+   "name": "Cabang Balik Bukit"
+  }
+ ],
+ "scopes": {
+  "company": {
+   "bs": {
+    "totalAssets": 32834010999,
+    "totalLiabilities": 3733488000,
+    "totalEquity": 29100522999,
+    "bridge": 26350522999,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 5318320000,
+       "journals": 763,
+       "lines": 763,
+       "sourceFp": "153469ad5962798ed07419681e83cb52a3b382ca25e5a601b75e7e0452b33c0a"
+      },
+      {
+       "code": "1112",
+       "amount": 5474381500,
+       "journals": 1021,
+       "lines": 1021,
+       "sourceFp": "af349e78629d11b4c000e506230f01dc118b7f4b17de1f2ee0e025fb3537b142"
+      },
+      {
+       "code": "1113",
+       "amount": 4659178499,
+       "journals": 2836,
+       "lines": 2836,
+       "sourceFp": "6ea5da140db71d28569b357ff1495a4dd7c720942c9337b9ad8039647b2221dc"
+      },
+      {
+       "code": "1114",
+       "amount": 3519734500,
+       "journals": 642,
+       "lines": 642,
+       "sourceFp": "06eae0c352043a8ada0b2e6592c8a3138ffe8eab0ddff8f041c1aaaea21f2cd3"
+      },
+      {
+       "code": "1115",
+       "amount": 3642470500,
+       "journals": 4644,
+       "lines": 4644,
+       "sourceFp": "5868abb51f4ef9dfe6876f35e1cfa35ead82b1bac8d489f8d7ac4f7f0cd9d50b"
+      },
+      {
+       "code": "1120",
+       "amount": 1384145000,
+       "journals": 2009,
+       "lines": 2009,
+       "sourceFp": "b5f99ea7a6fe0a1db02f02d25cd84023e70a24847e3253e538b52d3600435f80"
+      },
+      {
+       "code": "1130",
+       "amount": 3123773000,
+       "journals": 62,
+       "lines": 62,
+       "sourceFp": "125d6510aef2efe3ad41ce3de0e8ed10f6cad132ba4a6e15d957dee77a90b84f"
+      },
+      {
+       "code": "1200",
+       "amount": 2146808000,
+       "journals": 834,
+       "lines": 834,
+       "sourceFp": "12aca73f3ba099be0d994a88139bcb33c01d73e8f07981111b543c6ba85d73cb"
+      },
+      {
+       "code": "1300",
+       "amount": 1289000000,
+       "journals": 3600,
+       "lines": 3600,
+       "sourceFp": "6a62c64b08797fda7480ab93d65e498a72c7007cbb46c1ca837e99ac776f4cb4"
+      },
+      {
+       "code": "1400",
+       "amount": 270000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "db27131cafbcf4c1e114070a8909f48093c6b4f5e1c25468c3faf41587998110"
+      },
+      {
+       "code": "1410",
+       "amount": 350000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "bcb360b8f7bd366b1c76574d0abc7b361c47674d31d00fd41691796e8c47532f"
+      },
+      {
+       "code": "1420",
+       "amount": 1400000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "bc07d6c23cefd488490dbe0092d5e9ace2ae8e43791810b92c6953661eeed32f"
+      },
+      {
+       "code": "1490",
+       "amount": -593800000,
+       "journals": 56,
+       "lines": 56,
+       "sourceFp": "0f01352d37a51c8bcb1585743b5c4e958e35a1f8e90f16d2d7dd9a5afb051fdf"
+      },
+      {
+       "code": "1511",
+       "amount": 258000000,
+       "journals": 6,
+       "lines": 6,
+       "sourceFp": "f03dc92b38bec07345c268523306865f0dd5e70827fecf0e190ec35835faf342"
+      },
+      {
+       "code": "1512",
+       "amount": 175000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "2facb63441fc3b02cf251e16cde2a80a76656447bcdb017654c2da4a54f6bd49"
+      },
+      {
+       "code": "1513",
+       "amount": 240000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "25efcf3665b71409cf12b4812b910194b478d1974a84963e7ec6a36c53e56738"
+      },
+      {
+       "code": "1514",
+       "amount": 115000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "d83a78906dde3ebe282add161c74d384ce20fa95e081fd71e545f5358d1576fc"
+      },
+      {
+       "code": "1515",
+       "amount": 62000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "f02712911493b759fad3875792c24e0b5e8655cbe650dfc3145917c4c0ddb556"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 1633488000,
+       "journals": 694,
+       "lines": 694,
+       "sourceFp": "c5c75d54a28453d147f787a4a731c3914d5efa631399476fb9ba5b1785fe7493"
+      },
+      {
+       "code": "2200",
+       "amount": 1250000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "f4348e0e9f4f11ae6904bf3197259dbebdd4891e688315143caacede45b43143"
+      },
+      {
+       "code": "2511",
+       "amount": 415000000,
+       "journals": 6,
+       "lines": 6,
+       "sourceFp": "30bc66673219492112027aeea41629d53ef8c4603d1c6f60000d689c0fdc01f5"
+      },
+      {
+       "code": "2512",
+       "amount": 213000000,
+       "journals": 7,
+       "lines": 7,
+       "sourceFp": "3bd9d4f8735b26b962c9973cf12da9dd84f36e055234c64316cdedfac0cc6e1e"
+      },
+      {
+       "code": "2513",
+       "amount": 160000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "99ad54a29019c440cfbe5ed1f17a9023a0de600674378129490e315c01ed9707"
+      },
+      {
+       "code": "2514",
+       "amount": 62000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "85e6c333b53f5426cdf3b5ba1caef5035bb1209c563bfa73f58089547f2b2924"
+      }
+     ],
+     "EQUITY": [
+      {
+       "code": "3100",
+       "amount": 2750000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "489aa47bbfac6203b52fcbaf6aa740c5a155d7f0f312ccb4464bfbeffddd304c"
+      }
+     ]
+    }
+   },
+   "is": {
+    "netProfit": 50437499,
+    "grossProfit": 50437499,
+    "operatingProfit": 50437499
+   },
+   "tb": {
+    "totalDebit": 33427810999,
+    "totalCredit": 33427810999,
+    "difference": 0,
+    "bridge": 26350522999,
+    "signedByAccount": {
+     "1111": 5318320000,
+     "1112": 5474381500,
+     "1113": 4659178499,
+     "1114": 3519734500,
+     "1115": 3642470500,
+     "1120": 1384145000,
+     "1130": 3123773000,
+     "1200": 2146808000,
+     "1300": 1289000000,
+     "1400": 270000000,
+     "1410": 350000000,
+     "1420": 1400000000,
+     "1490": -593800000,
+     "1511": 258000000,
+     "1512": 175000000,
+     "1513": 240000000,
+     "1514": 115000000,
+     "1515": 62000000,
+     "2100": -1633488000,
+     "2200": -1250000000,
+     "2511": -415000000,
+     "2512": -213000000,
+     "2513": -160000000,
+     "2514": -62000000,
+     "3100": -2750000000
+    }
+   },
+   "cash": {
+    "beginning": 27071565500,
+    "ending": 27122002999,
+    "net": 50437499
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 3642470500,
+    "lines": 4644,
+    "sourceFp": "7556e0a6c5c50d07ea670264b24b33d2a5aace2c7a190c88f4de46ed76aa2699"
+   }
+  },
+  "branch:PUSAT": {
+   "bs": {
+    "totalAssets": 8555337902,
+    "totalLiabilities": 1870975000,
+    "totalEquity": 6684362902,
+    "bridge": 6684362902,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 1372314500,
+       "journals": 191,
+       "lines": 191,
+       "sourceFp": "d9fa46df94223f8e91644d9fd681dafab764dd5b113594938a4da6d092d52186"
+      },
+      {
+       "code": "1112",
+       "amount": 1557256500,
+       "journals": 256,
+       "lines": 256,
+       "sourceFp": "db182a53a61fe34b99ae2fa9f667dd39d47ec7e7a7aa1e1d318ddc03a602070f"
+      },
+      {
+       "code": "1113",
+       "amount": 1462682329,
+       "journals": 677,
+       "lines": 677,
+       "sourceFp": "3759e9ea147415b5805f8bb8f3f00075a5a47785a218fc178bd3b1c43ef92d03"
+      },
+      {
+       "code": "1114",
+       "amount": 1540656500,
+       "journals": 180,
+       "lines": 180,
+       "sourceFp": "89bb2e6dc9fafffcb93e3d0fe8724bc73187b42114af59449550627b777ec745"
+      },
+      {
+       "code": "1115",
+       "amount": 900285073,
+       "journals": 1154,
+       "lines": 1154,
+       "sourceFp": "32fa91410e0e46d8c0176ce0be6cfc26fa54bcc7bf9e8b7b1a746f97aa7b10c3"
+      },
+      {
+       "code": "1120",
+       "amount": 940808000,
+       "journals": 507,
+       "lines": 507,
+       "sourceFp": "88ceccf48e655e3adec40dca4d8b15a648ca39b6f6d74c76374b8c19c47525aa"
+      },
+      {
+       "code": "1130",
+       "amount": 727499000,
+       "journals": 14,
+       "lines": 14,
+       "sourceFp": "f0c6a00be5c79b8cc8f6fb76b6e67c0dc38e64d4ab9ebf4ab9dfc63d857c2e04"
+      },
+      {
+       "code": "1200",
+       "amount": 701498000,
+       "journals": 235,
+       "lines": 235,
+       "sourceFp": "783a720db7a934a1e7eac651b5d438f53eebea4b7545063ebd3be2a37d043ba3"
+      },
+      {
+       "code": "1300",
+       "amount": -1290662000,
+       "journals": 945,
+       "lines": 945,
+       "sourceFp": "74bc6195fdf17c935148d4d2f7c657ac11f467981733bad740fb24ddf6f6e766"
+      },
+      {
+       "code": "1410",
+       "amount": 350000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "bcb360b8f7bd366b1c76574d0abc7b361c47674d31d00fd41691796e8c47532f"
+      },
+      {
+       "code": "1490",
+       "amount": -159000000,
+       "journals": 17,
+       "lines": 17,
+       "sourceFp": "92c59c7f562843d78e73c3cdefa513cdfeb2618f52a98cc05a34e7bfd03f10ea"
+      },
+      {
+       "code": "1511",
+       "amount": 120000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "f25d95ab40829dfa9afd59d28c8a40f4d73d2443f15be5b0a3731ba1c3426040"
+      },
+      {
+       "code": "1512",
+       "amount": 175000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "fc98a8fcd29ec6949615e8e9a974d4f2f691cc47490da1e3e8d9e0ceda5af50c"
+      },
+      {
+       "code": "1513",
+       "amount": 90000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "a0e0d98e912afd490826d0a10d85e1a74baae5d7c687e14694c11bc185f89e89"
+      },
+      {
+       "code": "1514",
+       "amount": 35000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "e6f3380637b7f2b9b2144f33ead76f7aa3fa0c171848e739d9e44470ee1cc575"
+      },
+      {
+       "code": "1515",
+       "amount": 32000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "f5d80e00cf111c1eb566ede90b88fd1c0fe50c7fd7cfc578f4b345e6a02558d7"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 268975000,
+       "journals": 172,
+       "lines": 172,
+       "sourceFp": "8c5f2411bff3382284f16ffac3eae6adad949a91c096eb7309e900c1f2d6acca"
+      },
+      {
+       "code": "2200",
+       "amount": 1150000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "f922126d69deaac2ad839ec9be77252b7245ce22f5f7975cf60820a364974e4a"
+      },
+      {
+       "code": "2511",
+       "amount": 265000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "cb30f073d922c769c3de4a1153a13e4186bfdb49ee604fad103d7c266dcc048d"
+      },
+      {
+       "code": "2512",
+       "amount": 100000000,
+       "journals": 5,
+       "lines": 5,
+       "sourceFp": "dcce7131d8c2b6f0098ea0d8342ef1312277b8a10def103b74507d22845c9aa7"
+      },
+      {
+       "code": "2513",
+       "amount": 55000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "b2a1f361a9fb51fc7a4fbaf83db00fe7289f853b1885fbcd9182767b352424f8"
+      },
+      {
+       "code": "2514",
+       "amount": 32000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "5ff162ab7b8a86183ba4211d6b1a6aab68f037fc49be14b3cf6dcbcb0d01b70c"
+      }
+     ],
+     "EQUITY": []
+    }
+   },
+   "is": {
+    "netProfit": 12286902,
+    "grossProfit": 12286902,
+    "operatingProfit": 12286902
+   },
+   "tb": {
+    "totalDebit": 10004999902,
+    "totalCredit": 10004999902,
+    "difference": 0,
+    "bridge": 6684362902,
+    "signedByAccount": {
+     "1111": 1372314500,
+     "1112": 1557256500,
+     "1113": 1462682329,
+     "1114": 1540656500,
+     "1115": 900285073,
+     "1120": 940808000,
+     "1130": 727499000,
+     "1200": 701498000,
+     "1300": -1290662000,
+     "1410": 350000000,
+     "1490": -159000000,
+     "1511": 120000000,
+     "1512": 175000000,
+     "1513": 90000000,
+     "1514": 35000000,
+     "1515": 32000000,
+     "2100": -268975000,
+     "2200": -1150000000,
+     "2511": -265000000,
+     "2512": -100000000,
+     "2513": -55000000,
+     "2514": -32000000
+    }
+   },
+   "cash": {
+    "beginning": 8489215000,
+    "ending": 8501501902,
+    "net": 12286902
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 900285073,
+    "lines": 1154,
+    "sourceFp": "7bf110bf0744edf56b9c7d6f0b047887ebccccbf7d5566326832a4f92fcaaa1e"
+   }
+  },
+  "branch:METRO": {
+   "bs": {
+    "totalAssets": 3367354146,
+    "totalLiabilities": 334646000,
+    "totalEquity": 3032708146,
+    "bridge": 3032708146,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 370087567,
+       "journals": 108,
+       "lines": 108,
+       "sourceFp": "93f6093ad8478fc015324bb6c11986f2b85b50ff68f1e82f820eaab05d7cec7a"
+      },
+      {
+       "code": "1112",
+       "amount": 741644500,
+       "journals": 114,
+       "lines": 114,
+       "sourceFp": "7c72939933de96900096ca5be2aca3141c766c4ad23afdfc3e63e7fdc26f90d3"
+      },
+      {
+       "code": "1113",
+       "amount": 676119328,
+       "journals": 342,
+       "lines": 342,
+       "sourceFp": "a9e499e19660877d78233ec036e4a11793d7587fa8d09d6c97c6d173862efaf4"
+      },
+      {
+       "code": "1114",
+       "amount": 434959000,
+       "journals": 70,
+       "lines": 70,
+       "sourceFp": "9eacc0c00a215efa56b83d2d0d35deb3ad1a17756902924b70f84211d694856c"
+      },
+      {
+       "code": "1115",
+       "amount": 567685751,
+       "journals": 596,
+       "lines": 596,
+       "sourceFp": "cf8f7e95894ad047f5c18cae9f1f488228611f8458f39321af706fb083490a1d"
+      },
+      {
+       "code": "1120",
+       "amount": 217842000,
+       "journals": 260,
+       "lines": 260,
+       "sourceFp": "0c64cae36847bbbd8f9878c9ef32792383fae4f52a235f19cae782acf702ba01"
+      },
+      {
+       "code": "1130",
+       "amount": 57972000,
+       "journals": 5,
+       "lines": 5,
+       "sourceFp": "35f311748c537c5afc8860bf7412f362c52f100638a92f6a2831fb7f6aa5fcce"
+      },
+      {
+       "code": "1200",
+       "amount": -464252000,
+       "journals": 103,
+       "lines": 103,
+       "sourceFp": "8cd3ac62a4321bb5b7599702ba8dcc503422afbfa151f4bdef2307ef2f9555ee"
+      },
+      {
+       "code": "1300",
+       "amount": -2504000,
+       "journals": 436,
+       "lines": 436,
+       "sourceFp": "5341ff4ff292468088bb0da0b20bbeb8aa468c5611253af8a5dbfe8561a6a5d2"
+      },
+      {
+       "code": "1400",
+       "amount": 120000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "5c6b702fa703b97f7b0b5f2274f035f49f576bdf7cbf311a7e49c8c9e287ebe8"
+      },
+      {
+       "code": "1420",
+       "amount": 800000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "a4f4dee0c56d13a79d3ceffe8d6171a7d68e2f6632065f06fb761e38676030ed"
+      },
+      {
+       "code": "1490",
+       "amount": -92200000,
+       "journals": 9,
+       "lines": 9,
+       "sourceFp": "801440aac57df1b7a7ee6bd1a9f01ad50ffa779276e055c769cfa8d67697bb67"
+      },
+      {
+       "code": "1512",
+       "amount": -60000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "1e1b79661727c84a4c52c8b2b78acfaa34715b1b4bb998a16080819530bd3485"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 94646000,
+       "journals": 99,
+       "lines": 99,
+       "sourceFp": "487bcf811526c2052a38417f777896f8a968ca387a33628eff1c69a099f5e23c"
+      },
+      {
+       "code": "2200",
+       "amount": 300000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "08b5f520f34e5cb8ac2403b620ec95e2a5c4488b6eae6314870ff067c1f370ae"
+      },
+      {
+       "code": "2511",
+       "amount": -60000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "32227eac17d204de7fb96e167629613c8773082121f8f2affec1287a5e58dcaf"
+      }
+     ],
+     "EQUITY": []
+    }
+   },
+   "is": {
+    "netProfit": 5990646,
+    "grossProfit": 5990646,
+    "operatingProfit": 5990646
+   },
+   "tb": {
+    "totalDebit": 4046310146,
+    "totalCredit": 4046310146,
+    "difference": 0,
+    "bridge": 3032708146,
+    "signedByAccount": {
+     "1111": 370087567,
+     "1112": 741644500,
+     "1113": 676119328,
+     "1114": 434959000,
+     "1115": 567685751,
+     "1120": 217842000,
+     "1130": 57972000,
+     "1200": -464252000,
+     "1300": -2504000,
+     "1400": 120000000,
+     "1420": 800000000,
+     "1490": -92200000,
+     "1512": -60000000,
+     "2100": -94646000,
+     "2200": -300000000,
+     "2511": 60000000
+    }
+   },
+   "cash": {
+    "beginning": 3060319500,
+    "ending": 3066310146,
+    "net": 5990646
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 567685751,
+    "lines": 596,
+    "sourceFp": "22e81d821eba03c0d562c53ccd0e2eadb6a280aafa0e96a280c2b0cfc8d74790"
+   }
+  },
+  "branch:BL": {
+   "bs": {
+    "totalAssets": 3506801701,
+    "totalLiabilities": -27101000,
+    "totalEquity": 3533902701,
+    "bridge": 3033902701,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 671881923,
+       "journals": 93,
+       "lines": 93,
+       "sourceFp": "6e9f5da417ec4bbc9603b1987f255cee0aef63ca241bd967baadf686269bc808"
+      },
+      {
+       "code": "1112",
+       "amount": 588362500,
+       "journals": 136,
+       "lines": 136,
+       "sourceFp": "0e04e06c24e1b19e58d0115becc11c8522223472d2212f330c2b44e609fdb343"
+      },
+      {
+       "code": "1113",
+       "amount": -483654282,
+       "journals": 347,
+       "lines": 347,
+       "sourceFp": "5c2be8682a4ccf434328f24fe07847281346e458dac9f9603ca9c170a2ce7146"
+      },
+      {
+       "code": "1114",
+       "amount": 841571500,
+       "journals": 94,
+       "lines": 94,
+       "sourceFp": "0e5996b54ff8ed320e6e62a47ee164f82af8c8dbdec66eb08b72e7970b735a31"
+      },
+      {
+       "code": "1115",
+       "amount": 424493060,
+       "journals": 560,
+       "lines": 560,
+       "sourceFp": "e613dce5ef4ba6b71b30a3f3cddf0790634d1afe16d3f0cd6cb792c3e95602be"
+      },
+      {
+       "code": "1120",
+       "amount": 233363000,
+       "journals": 256,
+       "lines": 256,
+       "sourceFp": "3922b28249dd4dffb62c710aa7c78d51a36fa9c56777d1ce9a9bc18b33733493"
+      },
+      {
+       "code": "1130",
+       "amount": 360162000,
+       "journals": 7,
+       "lines": 7,
+       "sourceFp": "f9b7f285fd675b366f927c9486ff7b373f490684d1efe917fc8452d57a2f3a13"
+      },
+      {
+       "code": "1200",
+       "amount": 504574000,
+       "journals": 107,
+       "lines": 107,
+       "sourceFp": "dac44b74b237acd4f42755a734179a2eb2fd0204003b402a59208816c7aef1ae"
+      },
+      {
+       "code": "1300",
+       "amount": 271248000,
+       "journals": 445,
+       "lines": 445,
+       "sourceFp": "74e329a0347cf69c0342559d0b8c49371211512e3728ed62fe8765dcf7d920af"
+      },
+      {
+       "code": "1490",
+       "amount": -48200000,
+       "journals": 5,
+       "lines": 5,
+       "sourceFp": "e39dd7bfdbd56f88e0d20b00160feb87d8d772a68db4fa68cf2088f82a744bdd"
+      },
+      {
+       "code": "1511",
+       "amount": 33000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "57ab80a55daca591a52babdb18e94163368907e05dd141fd8e4b922280a6ae8a"
+      },
+      {
+       "code": "1514",
+       "amount": 80000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "dceb24d96df82494c60984547a0b15c04c11cacce0778eb9c7966c91f4cf8e80"
+      },
+      {
+       "code": "1515",
+       "amount": 30000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "2540ce8559f824de4ac28723027d78be0b93cc307a59e9eaca9515cf69decca8"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 29899000,
+       "journals": 89,
+       "lines": 89,
+       "sourceFp": "1795e6a38186bebe53c7d925edcdcd0fbe34bcb5dd91e747b849020ff66a12f5"
+      },
+      {
+       "code": "2200",
+       "amount": -200000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "8e6d9ebeaa4fc971584ec4f416ada7b5cd8f153d34de183065260d36eda50d58"
+      },
+      {
+       "code": "2512",
+       "amount": 113000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "757845859febf3516eae6fb1e33028e6be8a12df860212705f7d7a8b09985d5a"
+      },
+      {
+       "code": "2514",
+       "amount": 30000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "69fa950ed9110e1f7e986a520b6d319252be553623d9f001f064e1a29ab4683e"
+      }
+     ],
+     "EQUITY": [
+      {
+       "code": "3100",
+       "amount": 500000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "462eb3900f90d74176f99025f27bcb8bc00fb96e254d4eb050dd686f4102dc5d"
+      }
+     ]
+    }
+   },
+   "is": {
+    "netProfit": 6241701,
+    "grossProfit": 6241701,
+    "operatingProfit": 6241701
+   },
+   "tb": {
+    "totalDebit": 4238655983,
+    "totalCredit": 4238655983,
+    "difference": 0,
+    "bridge": 3033902701,
+    "signedByAccount": {
+     "1111": 671881923,
+     "1112": 588362500,
+     "1113": -483654282,
+     "1114": 841571500,
+     "1115": 424493060,
+     "1120": 233363000,
+     "1130": 360162000,
+     "1200": 504574000,
+     "1300": 271248000,
+     "1490": -48200000,
+     "1511": 33000000,
+     "1514": 80000000,
+     "1515": 30000000,
+     "2100": -29899000,
+     "2200": 200000000,
+     "2512": -113000000,
+     "2514": -30000000,
+     "3100": -500000000
+    }
+   },
+   "cash": {
+    "beginning": 2629938000,
+    "ending": 2636179701,
+    "net": 6241701
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 424493060,
+    "lines": 560,
+    "sourceFp": "65ebd006c2fb1ea61081c02bbeef1531afa098a3b5354824c1c244cab9760993"
+   }
+  },
+  "branch:KOTABUMI": {
+   "bs": {
+    "totalAssets": 6321344705,
+    "totalLiabilities": 839380000,
+    "totalEquity": 5481964705,
+    "bridge": 3231964705,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 808060000,
+       "journals": 98,
+       "lines": 98,
+       "sourceFp": "44afd2bb1ca441e23b1fd4a22ed515e43e5ffb62c8bcc0ef49f1f445a49af8da"
+      },
+      {
+       "code": "1112",
+       "amount": 886160500,
+       "journals": 120,
+       "lines": 120,
+       "sourceFp": "2d9440eb75e23f3f8665098d67a62263f9b3def5c57447a449512567521a0378"
+      },
+      {
+       "code": "1113",
+       "amount": 727150250,
+       "journals": 371,
+       "lines": 371,
+       "sourceFp": "e5fb6806d1657e9ae6a4cf026893706314bf7a663694a55738dcc58503a350d6"
+      },
+      {
+       "code": "1114",
+       "amount": -8286500,
+       "journals": 81,
+       "lines": 81,
+       "sourceFp": "1a3fb4d7caf1e581469cfa25b7a397ba118ac14e2c956b57cca1f1443f3862ab"
+      },
+      {
+       "code": "1115",
+       "amount": 190175455,
+       "journals": 575,
+       "lines": 575,
+       "sourceFp": "d7f09b6db1bacd01a012940091243c5af06a76a223af50fdc07e5337770f6256"
+      },
+      {
+       "code": "1120",
+       "amount": 1049502000,
+       "journals": 255,
+       "lines": 255,
+       "sourceFp": "5241aef43c372a37ea329b50aaa944bb723b732a41e204d62de4d1659647c2e6"
+      },
+      {
+       "code": "1130",
+       "amount": 741784000,
+       "journals": 12,
+       "lines": 12,
+       "sourceFp": "bd9cc98cf0d98e25d86b02e8afffaaf49e1593c66d3bd24210d9bc07959b3fb2"
+      },
+      {
+       "code": "1200",
+       "amount": 607457000,
+       "journals": 106,
+       "lines": 106,
+       "sourceFp": "76803624c0e834b4caf072bdfccca329dea86c9173735812ce529d661302f794"
+      },
+      {
+       "code": "1300",
+       "amount": 556942000,
+       "journals": 472,
+       "lines": 472,
+       "sourceFp": "448aee15df2c0fa027e2e9398d817e04f5258548c0aa3565c393a532c3d10c7a"
+      },
+      {
+       "code": "1400",
+       "amount": 150000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "f0abd820913587db3a981f1fa2172f934b4884820caa36caf87da5f931c15a72"
+      },
+      {
+       "code": "1420",
+       "amount": 600000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "b1c8e992f3e4fe1b9b028409b6515f28a45cc3c86e62801b692a2ed108375695"
+      },
+      {
+       "code": "1490",
+       "amount": -137600000,
+       "journals": 6,
+       "lines": 6,
+       "sourceFp": "b6ae076dee4fea0ba773e32b795d94f13f09fdbf27b47a4478013f0e0783db79"
+      },
+      {
+       "code": "1513",
+       "amount": 150000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "a6d4de7e170c98a574f9687b889d3f285c7480894b6e2a1c0ae8cce82b86a9ec"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 689380000,
+       "journals": 73,
+       "lines": 73,
+       "sourceFp": "52143aa6af5ad5fa20e5a6114407172b0f2c866781a6496e0f184afdef2b1126"
+      },
+      {
+       "code": "2511",
+       "amount": 150000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "6a32f52d5841f9aeb26c9212edf837331ec8b4be3190e775e6caf355bf15b14b"
+      }
+     ],
+     "EQUITY": [
+      {
+       "code": "3100",
+       "amount": 2250000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "15b72d3774d553bbf306cc99bc604da318d4742af3c085392f4784c49745d9b4"
+      }
+     ]
+    }
+   },
+   "is": {
+    "netProfit": 6366205,
+    "grossProfit": 6366205,
+    "operatingProfit": 6366205
+   },
+   "tb": {
+    "totalDebit": 6467231205,
+    "totalCredit": 6467231205,
+    "difference": 0,
+    "bridge": 3231964705,
+    "signedByAccount": {
+     "1111": 808060000,
+     "1112": 886160500,
+     "1113": 727150250,
+     "1114": -8286500,
+     "1115": 190175455,
+     "1120": 1049502000,
+     "1130": 741784000,
+     "1200": 607457000,
+     "1300": 556942000,
+     "1400": 150000000,
+     "1420": 600000000,
+     "1490": -137600000,
+     "1513": 150000000,
+     "2100": -689380000,
+     "2511": -150000000,
+     "3100": -2250000000
+    }
+   },
+   "cash": {
+    "beginning": 4388179500,
+    "ending": 4394545705,
+    "net": 6366205
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 190175455,
+    "lines": 575,
+    "sourceFp": "028e281f67ad427fd4e8b003ce1bd892b4944c3b98ea6a1180b10d4cf7a6ea4f"
+   }
+  },
+  "branch:PRINGSEWU": {
+   "bs": {
+    "totalAssets": 3015227658,
+    "totalLiabilities": 735743000,
+    "totalEquity": 2279484658,
+    "bridge": 2279484658,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 200392500,
+       "journals": 87,
+       "lines": 87,
+       "sourceFp": "b3f98d5ee070524d2a89c39fa23ccbac3a5fc28775f196ebfe6f29c0d2bf567c"
+      },
+      {
+       "code": "1112",
+       "amount": 603463500,
+       "journals": 141,
+       "lines": 141,
+       "sourceFp": "db7681d9963f63f4a6243084ed29086e4d036dae2ec2c386da9272ea5e64a793"
+      },
+      {
+       "code": "1113",
+       "amount": 750638846,
+       "journals": 360,
+       "lines": 360,
+       "sourceFp": "8461f1c94301286717b8f671a6d0b092c8ddd6a6b2426e7b357ad15b1259980f"
+      },
+      {
+       "code": "1114",
+       "amount": 331021000,
+       "journals": 76,
+       "lines": 76,
+       "sourceFp": "b02515dd8803e51ab06a84379663545c7ded486abd70051667a97105b05fd087"
+      },
+      {
+       "code": "1115",
+       "amount": 405257812,
+       "journals": 580,
+       "lines": 580,
+       "sourceFp": "0061b8e7a15c300a132e9276562b9e56aeff0f4fefd9b3672b169998a552ccf1"
+      },
+      {
+       "code": "1120",
+       "amount": -4364000,
+       "journals": 242,
+       "lines": 242,
+       "sourceFp": "c3be8e5fcfbf1e27d98f6cadd3d092ad52981de57f5b2fa3b5352f32673dd368"
+      },
+      {
+       "code": "1130",
+       "amount": 225359000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "1ab3b2587668332668fbbd8c99e9fd1e95ea145e8b2b5ba2711df4c308d3d663"
+      },
+      {
+       "code": "1200",
+       "amount": -130568000,
+       "journals": 93,
+       "lines": 93,
+       "sourceFp": "34cae91a6c90130f6eb9beadac7a77b4924e466270324031840610f0dda2d069"
+      },
+      {
+       "code": "1300",
+       "amount": 709627000,
+       "journals": 430,
+       "lines": 430,
+       "sourceFp": "014df882479aa862719249ae1711260b21e94825ccd1c43ba363de3b89004b71"
+      },
+      {
+       "code": "1490",
+       "amount": -75600000,
+       "journals": 9,
+       "lines": 9,
+       "sourceFp": "e9e422373373872386735f5bf2bf79a50a493dc7185b7795c93fe4999807a70e"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 735743000,
+       "journals": 87,
+       "lines": 87,
+       "sourceFp": "44e62e9c8e346f6b365c69d74c1cd8fadd9c01d0cec95c4a80092524589782d7"
+      }
+     ],
+     "EQUITY": []
+    }
+   },
+   "is": {
+    "netProfit": 6278158,
+    "grossProfit": 6278158,
+    "operatingProfit": 6278158
+   },
+   "tb": {
+    "totalDebit": 3225759658,
+    "totalCredit": 3225759658,
+    "difference": 0,
+    "bridge": 2279484658,
+    "signedByAccount": {
+     "1111": 200392500,
+     "1112": 603463500,
+     "1113": 750638846,
+     "1114": 331021000,
+     "1115": 405257812,
+     "1120": -4364000,
+     "1130": 225359000,
+     "1200": -130568000,
+     "1300": 709627000,
+     "1490": -75600000,
+     "2100": -735743000
+    }
+   },
+   "cash": {
+    "beginning": 2505490500,
+    "ending": 2511768658,
+    "net": 6278158
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 405257812,
+    "lines": 580,
+    "sourceFp": "f18f3b1308d769df0e0a93947740e739f6ffc39f642f2da56d05fed3b7ebeb80"
+   }
+  },
+  "branch:LIWA": {
+   "bs": {
+    "totalAssets": 4004410640,
+    "totalLiabilities": -86001000,
+    "totalEquity": 4090411640,
+    "bridge": 4090411640,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 1180398510,
+       "journals": 100,
+       "lines": 100,
+       "sourceFp": "0749c5f28954c2ad0571bfa16d329147920801a8900b3981b8559f09ce6068b0"
+      },
+      {
+       "code": "1112",
+       "amount": 294315500,
+       "journals": 136,
+       "lines": 136,
+       "sourceFp": "d2c9be44368824ea0551214647d955fcffe7340d9b596e4b194174746f491808"
+      },
+      {
+       "code": "1113",
+       "amount": 739879831,
+       "journals": 353,
+       "lines": 353,
+       "sourceFp": "ef93962187b96755b25cb655f4e1de6b91982010df2f0732127a892680ead73a"
+      },
+      {
+       "code": "1114",
+       "amount": -310998000,
+       "journals": 68,
+       "lines": 68,
+       "sourceFp": "3c6a0439fd0159a1017058b6e2aa3cae5048a9c574185e1f97325198a9e5c945"
+      },
+      {
+       "code": "1115",
+       "amount": 1213252799,
+       "journals": 596,
+       "lines": 596,
+       "sourceFp": "e259f2ff9989e2ad078b929ef4d4243be0fca57f8e25ece98806060f771d5268"
+      },
+      {
+       "code": "1120",
+       "amount": -1086888000,
+       "journals": 233,
+       "lines": 233,
+       "sourceFp": "839304966c115b07f0765a66015220941b446d551c393a404627a07ac768978c"
+      },
+      {
+       "code": "1130",
+       "amount": 533810000,
+       "journals": 10,
+       "lines": 10,
+       "sourceFp": "eb106244df994ff986014624eaa77365765fcd4128fee90af19a54d37fb996d3"
+      },
+      {
+       "code": "1200",
+       "amount": 613833000,
+       "journals": 95,
+       "lines": 95,
+       "sourceFp": "489ec6fd4b536e00aa898923178b3afc54330cf9ba6cb102d8614fdfaf9c725c"
+      },
+      {
+       "code": "1300",
+       "amount": 774907000,
+       "journals": 447,
+       "lines": 447,
+       "sourceFp": "730dfe8cf8225754b81ba6ca7dc65496d23d97554e4e13df31bc91ae56d66274"
+      },
+      {
+       "code": "1490",
+       "amount": -53100000,
+       "journals": 6,
+       "lines": 6,
+       "sourceFp": "07c3511c6670290e90f902edb22829200f7ea0caa334a567b726c58b3ade3968"
+      },
+      {
+       "code": "1511",
+       "amount": 45000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "5f94072472c0127911247eb92693b91d8213206cc7ed89e9b9ab0f43c7181200"
+      },
+      {
+       "code": "1512",
+       "amount": 60000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "793d2d2025c7c13104a0693701598c5ec64584b1cb790eeb83dd69be695bf3cf"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": -191001000,
+       "journals": 81,
+       "lines": 81,
+       "sourceFp": "c76afe44e43e292a0c473e749d4a0442fe6aafba0af42f0d80eb562b781ab721"
+      },
+      {
+       "code": "2511",
+       "amount": 60000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "e2f00770cdc77cd86294c5f0d5a14f896a128818e6d7c12b0f7d7e260e53b4c0"
+      },
+      {
+       "code": "2513",
+       "amount": 45000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "005c46263dbf5f7ef0cfd18c8ac455452068e52179ff37e01e0f65c9236cb672"
+      }
+     ],
+     "EQUITY": []
+    }
+   },
+   "is": {
+    "netProfit": 6446140,
+    "grossProfit": 6446140,
+    "operatingProfit": 6446140
+   },
+   "tb": {
+    "totalDebit": 5646397640,
+    "totalCredit": 5646397640,
+    "difference": 0,
+    "bridge": 4090411640,
+    "signedByAccount": {
+     "1111": 1180398510,
+     "1112": 294315500,
+     "1113": 739879831,
+     "1114": -310998000,
+     "1115": 1213252799,
+     "1120": -1086888000,
+     "1130": 533810000,
+     "1200": 613833000,
+     "1300": 774907000,
+     "1490": -53100000,
+     "1511": 45000000,
+     "1512": 60000000,
+     "2100": 191001000,
+     "2511": -60000000,
+     "2513": -45000000
+    }
+   },
+   "cash": {
+    "beginning": 2557324500,
+    "ending": 2563770640,
+    "net": 6446140
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 1213252799,
+    "lines": 596,
+    "sourceFp": "04019cbb40015b2e8a85bf85a68462d92e537c793a23e0092689b4d9e59d333d"
+   }
+  },
+  "branch:BALIK": {
+   "bs": {
+    "totalAssets": 4063534247,
+    "totalLiabilities": 65846000,
+    "totalEquity": 3997688247,
+    "bridge": 3997688247,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 715185000,
+       "journals": 86,
+       "lines": 86,
+       "sourceFp": "5115f4b2748d33240f7917eb63a11d7686808d1e66439ade814315b5b81ac79f"
+      },
+      {
+       "code": "1112",
+       "amount": 803178500,
+       "journals": 118,
+       "lines": 118,
+       "sourceFp": "04b114cd187c3143f3c84dfaf62010fef907ac99c0a74c00b53ef8ac6a5c8cc6"
+      },
+      {
+       "code": "1113",
+       "amount": 786362197,
+       "journals": 386,
+       "lines": 386,
+       "sourceFp": "1f9170ba7ebee1cefa841f4d787f40ee4100d18909c9d0334a08c2c2f2340545"
+      },
+      {
+       "code": "1114",
+       "amount": 690811000,
+       "journals": 73,
+       "lines": 73,
+       "sourceFp": "688053d4f670c2648d2d2f5acce97b1c33bc9b575ea97c08bc08e021ca0c471b"
+      },
+      {
+       "code": "1115",
+       "amount": -58679450,
+       "journals": 583,
+       "lines": 583,
+       "sourceFp": "d9c4fd3960f8aa4c9b83f3ea335f612ec8f54e0e8bfcdc787fe89956146f32a3"
+      },
+      {
+       "code": "1120",
+       "amount": 33882000,
+       "journals": 256,
+       "lines": 256,
+       "sourceFp": "494bdf99c8368494b05c93896ce07f91cba2f092f061d266bf4b979646208182"
+      },
+      {
+       "code": "1130",
+       "amount": 477187000,
+       "journals": 10,
+       "lines": 10,
+       "sourceFp": "ceedeb83d287d48b46278b27e040ea4f7e61a08f9d78127bf7f6f5d6832ad380"
+      },
+      {
+       "code": "1200",
+       "amount": 314266000,
+       "journals": 95,
+       "lines": 95,
+       "sourceFp": "5c98ca31fb7e1aa8d2fc4249996197df3e8c73ea543ffe1655b884ad3c60ce2d"
+      },
+      {
+       "code": "1300",
+       "amount": 269442000,
+       "journals": 425,
+       "lines": 425,
+       "sourceFp": "88c1ab471822183ef5beb32c15d4ee90ef064fdb405cd61497b0c7f679d8740d"
+      },
+      {
+       "code": "1490",
+       "amount": -28100000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "aefc88ec99d2b873ba5b469453b68c65922a9550ccd6a7b7c5bae6da4d39d244"
+      },
+      {
+       "code": "1511",
+       "amount": 60000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "e529a47c03df7d13ab86fdf6541c8ba5fbca66bbc004e08e639587b76a7a07ac"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 5846000,
+       "journals": 93,
+       "lines": 93,
+       "sourceFp": "b9a18c49ce64c34b5797f955a1f424ca2553ef786c3940303c9e83037109edbe"
+      },
+      {
+       "code": "2513",
+       "amount": 60000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "d192e123751c3c90a36f391bf22fd0c2d3f2680f60029d86891dcea3d65435a7"
+      }
+     ],
+     "EQUITY": []
+    }
+   },
+   "is": {
+    "netProfit": 6827747,
+    "grossProfit": 6827747,
+    "operatingProfit": 6827747
+   },
+   "tb": {
+    "totalDebit": 4150313697,
+    "totalCredit": 4150313697,
+    "difference": 0,
+    "bridge": 3997688247,
+    "signedByAccount": {
+     "1111": 715185000,
+     "1112": 803178500,
+     "1113": 786362197,
+     "1114": 690811000,
+     "1115": -58679450,
+     "1120": 33882000,
+     "1130": 477187000,
+     "1200": 314266000,
+     "1300": 269442000,
+     "1490": -28100000,
+     "1511": 60000000,
+     "2100": -5846000,
+     "2513": -60000000
+    }
+   },
+   "cash": {
+    "beginning": 3441098500,
+    "ending": 3447926247,
+    "net": 6827747
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": -58679450,
+    "lines": 583,
+    "sourceFp": "47fcaae44310423afe8362e297930764889c880abf0a2906f74d948efcfc5aaa"
+   }
+  },
+  "selected:PUSAT+METRO": {
+   "bs": {
+    "totalAssets": 11922692048,
+    "totalLiabilities": 2205621000,
+    "totalEquity": 9717071048,
+    "bridge": 9717071048,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 1742402067,
+       "journals": 299,
+       "lines": 299,
+       "sourceFp": "723c423d7e5b52858f301a099cb409b04d6f662937349d3ad2a4d0c98ff23c90"
+      },
+      {
+       "code": "1112",
+       "amount": 2298901000,
+       "journals": 370,
+       "lines": 370,
+       "sourceFp": "0ed809668bb2bfab2fb95ec150329359ad7d05f5563f846d58556663366db567"
+      },
+      {
+       "code": "1113",
+       "amount": 2138801657,
+       "journals": 1019,
+       "lines": 1019,
+       "sourceFp": "a57f1f549ee2c6276781245d6370a3c4681f5b4e55872e0e6f5490950f075df0"
+      },
+      {
+       "code": "1114",
+       "amount": 1975615500,
+       "journals": 250,
+       "lines": 250,
+       "sourceFp": "10f5922fb82e0cdbc56925ab56f6b8c7592b227acc764d9c5dcfd74ca59f25c4"
+      },
+      {
+       "code": "1115",
+       "amount": 1467970824,
+       "journals": 1750,
+       "lines": 1750,
+       "sourceFp": "ecdfba25894c6557c44432950e9956a02e207a1f85391f280bb39ef13e7fe6f8"
+      },
+      {
+       "code": "1120",
+       "amount": 1158650000,
+       "journals": 767,
+       "lines": 767,
+       "sourceFp": "73de671b91a1573ce9ebd4c963e771da86bea20219bd9d36adc8498da6c6ac52"
+      },
+      {
+       "code": "1130",
+       "amount": 785471000,
+       "journals": 19,
+       "lines": 19,
+       "sourceFp": "0ac66628c6070baaf1de5f6195a4ad6ba0ad3fdfb204c1641cfe419c974ead47"
+      },
+      {
+       "code": "1200",
+       "amount": 237246000,
+       "journals": 338,
+       "lines": 338,
+       "sourceFp": "161f6e3ea4a8828d0a38b18cc58e5608a029044837e1af75c721ee4a448e8f8d"
+      },
+      {
+       "code": "1300",
+       "amount": -1293166000,
+       "journals": 1381,
+       "lines": 1381,
+       "sourceFp": "53e1c611108259fa83faf9187a00b81b2f1a47135755b5f0a682b419758913ec"
+      },
+      {
+       "code": "1400",
+       "amount": 120000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "5c6b702fa703b97f7b0b5f2274f035f49f576bdf7cbf311a7e49c8c9e287ebe8"
+      },
+      {
+       "code": "1410",
+       "amount": 350000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "bcb360b8f7bd366b1c76574d0abc7b361c47674d31d00fd41691796e8c47532f"
+      },
+      {
+       "code": "1420",
+       "amount": 800000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "a4f4dee0c56d13a79d3ceffe8d6171a7d68e2f6632065f06fb761e38676030ed"
+      },
+      {
+       "code": "1490",
+       "amount": -251200000,
+       "journals": 26,
+       "lines": 26,
+       "sourceFp": "a3681e4595c3d09d3401345df80fe08d41525de73310fb3716d731637bf487a1"
+      },
+      {
+       "code": "1511",
+       "amount": 120000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "f25d95ab40829dfa9afd59d28c8a40f4d73d2443f15be5b0a3731ba1c3426040"
+      },
+      {
+       "code": "1512",
+       "amount": 115000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "c5a697f12722c28aca548ae10f17849d6b821358b98588ec30d968b94ee3c753"
+      },
+      {
+       "code": "1513",
+       "amount": 90000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "a0e0d98e912afd490826d0a10d85e1a74baae5d7c687e14694c11bc185f89e89"
+      },
+      {
+       "code": "1514",
+       "amount": 35000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "e6f3380637b7f2b9b2144f33ead76f7aa3fa0c171848e739d9e44470ee1cc575"
+      },
+      {
+       "code": "1515",
+       "amount": 32000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "f5d80e00cf111c1eb566ede90b88fd1c0fe50c7fd7cfc578f4b345e6a02558d7"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 363621000,
+       "journals": 271,
+       "lines": 271,
+       "sourceFp": "0803360f0de3f985c1477c785c91742ccdf7001d4ea5ca303e4ba3c2c0a36694"
+      },
+      {
+       "code": "2200",
+       "amount": 1450000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "7e5f9f72776e44bc1473d33d0a7d6ce405d819d932e763f7040f5fdb8c8956db"
+      },
+      {
+       "code": "2511",
+       "amount": 205000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "b9b955d5c0c1d416e82fd5a3f772f8f1778e5eab1723c5f8d978965a94ffb2ac"
+      },
+      {
+       "code": "2512",
+       "amount": 100000000,
+       "journals": 5,
+       "lines": 5,
+       "sourceFp": "dcce7131d8c2b6f0098ea0d8342ef1312277b8a10def103b74507d22845c9aa7"
+      },
+      {
+       "code": "2513",
+       "amount": 55000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "b2a1f361a9fb51fc7a4fbaf83db00fe7289f853b1885fbcd9182767b352424f8"
+      },
+      {
+       "code": "2514",
+       "amount": 32000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "5ff162ab7b8a86183ba4211d6b1a6aab68f037fc49be14b3cf6dcbcb0d01b70c"
+      }
+     ],
+     "EQUITY": []
+    }
+   },
+   "is": {
+    "netProfit": 18277548,
+    "grossProfit": 18277548,
+    "operatingProfit": 18277548
+   },
+   "tb": {
+    "totalDebit": 13467058048,
+    "totalCredit": 13467058048,
+    "difference": 0,
+    "bridge": 9717071048,
+    "signedByAccount": {
+     "1111": 1742402067,
+     "1112": 2298901000,
+     "1113": 2138801657,
+     "1114": 1975615500,
+     "1115": 1467970824,
+     "1120": 1158650000,
+     "1130": 785471000,
+     "1200": 237246000,
+     "1300": -1293166000,
+     "1400": 120000000,
+     "1410": 350000000,
+     "1420": 800000000,
+     "1490": -251200000,
+     "1511": 120000000,
+     "1512": 115000000,
+     "1513": 90000000,
+     "1514": 35000000,
+     "1515": 32000000,
+     "2100": -363621000,
+     "2200": -1450000000,
+     "2511": -205000000,
+     "2512": -100000000,
+     "2513": -55000000,
+     "2514": -32000000
+    }
+   },
+   "cash": {
+    "beginning": 11549534500,
+    "ending": 11567812048,
+    "net": 18277548
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 1467970824,
+    "lines": 1750,
+    "sourceFp": "ec4fb6d782d9fb3f7b9296d61dd2621062fa8a4371df6581d8c5a3d84cf759b4"
+   }
+  },
+  "all": {
+   "bs": {
+    "totalAssets": 32834010999,
+    "totalLiabilities": 3733488000,
+    "totalEquity": 29100522999,
+    "bridge": 26350522999,
+    "difference": 0,
+    "accounts": {
+     "ASSET": [
+      {
+       "code": "1111",
+       "amount": 5318320000,
+       "journals": 763,
+       "lines": 763,
+       "sourceFp": "153469ad5962798ed07419681e83cb52a3b382ca25e5a601b75e7e0452b33c0a"
+      },
+      {
+       "code": "1112",
+       "amount": 5474381500,
+       "journals": 1021,
+       "lines": 1021,
+       "sourceFp": "af349e78629d11b4c000e506230f01dc118b7f4b17de1f2ee0e025fb3537b142"
+      },
+      {
+       "code": "1113",
+       "amount": 4659178499,
+       "journals": 2836,
+       "lines": 2836,
+       "sourceFp": "6ea5da140db71d28569b357ff1495a4dd7c720942c9337b9ad8039647b2221dc"
+      },
+      {
+       "code": "1114",
+       "amount": 3519734500,
+       "journals": 642,
+       "lines": 642,
+       "sourceFp": "06eae0c352043a8ada0b2e6592c8a3138ffe8eab0ddff8f041c1aaaea21f2cd3"
+      },
+      {
+       "code": "1115",
+       "amount": 3642470500,
+       "journals": 4644,
+       "lines": 4644,
+       "sourceFp": "5868abb51f4ef9dfe6876f35e1cfa35ead82b1bac8d489f8d7ac4f7f0cd9d50b"
+      },
+      {
+       "code": "1120",
+       "amount": 1384145000,
+       "journals": 2009,
+       "lines": 2009,
+       "sourceFp": "b5f99ea7a6fe0a1db02f02d25cd84023e70a24847e3253e538b52d3600435f80"
+      },
+      {
+       "code": "1130",
+       "amount": 3123773000,
+       "journals": 62,
+       "lines": 62,
+       "sourceFp": "125d6510aef2efe3ad41ce3de0e8ed10f6cad132ba4a6e15d957dee77a90b84f"
+      },
+      {
+       "code": "1200",
+       "amount": 2146808000,
+       "journals": 834,
+       "lines": 834,
+       "sourceFp": "12aca73f3ba099be0d994a88139bcb33c01d73e8f07981111b543c6ba85d73cb"
+      },
+      {
+       "code": "1300",
+       "amount": 1289000000,
+       "journals": 3600,
+       "lines": 3600,
+       "sourceFp": "6a62c64b08797fda7480ab93d65e498a72c7007cbb46c1ca837e99ac776f4cb4"
+      },
+      {
+       "code": "1400",
+       "amount": 270000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "db27131cafbcf4c1e114070a8909f48093c6b4f5e1c25468c3faf41587998110"
+      },
+      {
+       "code": "1410",
+       "amount": 350000000,
+       "journals": 1,
+       "lines": 1,
+       "sourceFp": "bcb360b8f7bd366b1c76574d0abc7b361c47674d31d00fd41691796e8c47532f"
+      },
+      {
+       "code": "1420",
+       "amount": 1400000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "bc07d6c23cefd488490dbe0092d5e9ace2ae8e43791810b92c6953661eeed32f"
+      },
+      {
+       "code": "1490",
+       "amount": -593800000,
+       "journals": 56,
+       "lines": 56,
+       "sourceFp": "0f01352d37a51c8bcb1585743b5c4e958e35a1f8e90f16d2d7dd9a5afb051fdf"
+      },
+      {
+       "code": "1511",
+       "amount": 258000000,
+       "journals": 6,
+       "lines": 6,
+       "sourceFp": "f03dc92b38bec07345c268523306865f0dd5e70827fecf0e190ec35835faf342"
+      },
+      {
+       "code": "1512",
+       "amount": 175000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "2facb63441fc3b02cf251e16cde2a80a76656447bcdb017654c2da4a54f6bd49"
+      },
+      {
+       "code": "1513",
+       "amount": 240000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "25efcf3665b71409cf12b4812b910194b478d1974a84963e7ec6a36c53e56738"
+      },
+      {
+       "code": "1514",
+       "amount": 115000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "d83a78906dde3ebe282add161c74d384ce20fa95e081fd71e545f5358d1576fc"
+      },
+      {
+       "code": "1515",
+       "amount": 62000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "f02712911493b759fad3875792c24e0b5e8655cbe650dfc3145917c4c0ddb556"
+      }
+     ],
+     "LIABILITY": [
+      {
+       "code": "2100",
+       "amount": 1633488000,
+       "journals": 694,
+       "lines": 694,
+       "sourceFp": "c5c75d54a28453d147f787a4a731c3914d5efa631399476fb9ba5b1785fe7493"
+      },
+      {
+       "code": "2200",
+       "amount": 1250000000,
+       "journals": 4,
+       "lines": 4,
+       "sourceFp": "f4348e0e9f4f11ae6904bf3197259dbebdd4891e688315143caacede45b43143"
+      },
+      {
+       "code": "2511",
+       "amount": 415000000,
+       "journals": 6,
+       "lines": 6,
+       "sourceFp": "30bc66673219492112027aeea41629d53ef8c4603d1c6f60000d689c0fdc01f5"
+      },
+      {
+       "code": "2512",
+       "amount": 213000000,
+       "journals": 7,
+       "lines": 7,
+       "sourceFp": "3bd9d4f8735b26b962c9973cf12da9dd84f36e055234c64316cdedfac0cc6e1e"
+      },
+      {
+       "code": "2513",
+       "amount": 160000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "99ad54a29019c440cfbe5ed1f17a9023a0de600674378129490e315c01ed9707"
+      },
+      {
+       "code": "2514",
+       "amount": 62000000,
+       "journals": 3,
+       "lines": 3,
+       "sourceFp": "85e6c333b53f5426cdf3b5ba1caef5035bb1209c563bfa73f58089547f2b2924"
+      }
+     ],
+     "EQUITY": [
+      {
+       "code": "3100",
+       "amount": 2750000000,
+       "journals": 2,
+       "lines": 2,
+       "sourceFp": "489aa47bbfac6203b52fcbaf6aa740c5a155d7f0f312ccb4464bfbeffddd304c"
+      }
+     ]
+    }
+   },
+   "is": {
+    "netProfit": 50437499,
+    "grossProfit": 50437499,
+    "operatingProfit": 50437499
+   },
+   "tb": {
+    "totalDebit": 33427810999,
+    "totalCredit": 33427810999,
+    "difference": 0,
+    "bridge": 26350522999,
+    "signedByAccount": {
+     "1111": 5318320000,
+     "1112": 5474381500,
+     "1113": 4659178499,
+     "1114": 3519734500,
+     "1115": 3642470500,
+     "1120": 1384145000,
+     "1130": 3123773000,
+     "1200": 2146808000,
+     "1300": 1289000000,
+     "1400": 270000000,
+     "1410": 350000000,
+     "1420": 1400000000,
+     "1490": -593800000,
+     "1511": 258000000,
+     "1512": 175000000,
+     "1513": 240000000,
+     "1514": 115000000,
+     "1515": 62000000,
+     "2100": -1633488000,
+     "2200": -1250000000,
+     "2511": -415000000,
+     "2512": -213000000,
+     "2513": -160000000,
+     "2514": -62000000,
+     "3100": -2750000000
+    }
+   },
+   "cash": {
+    "beginning": 27071565500,
+    "ending": 27122002999,
+    "net": 50437499
+   },
+   "ledgerTop1": {
+    "opening": 0,
+    "ending": 3642470500,
+    "lines": 4644,
+    "sourceFp": "7556e0a6c5c50d07ea670264b24b33d2a5aace2c7a190c88f4de46ed76aa2699"
+   }
+  }
+ },
+ "invariants": [
+  {
+   "name": "Σ aset cabang = aset perusahaan",
+   "pass": true,
+   "detail": [
+    32834010999,
+    32834010999
+   ]
+  },
+  {
+   "name": "Σ kewajiban cabang = kewajiban perusahaan",
+   "pass": true
+  },
+  {
+   "name": "Σ ekuitas (+RE-BRIDGE) cabang = perusahaan",
+   "pass": true
+  },
+  {
+   "name": "Σ laba bersih cabang = perusahaan",
+   "pass": true
+  },
+  {
+   "name": "Σ saldo bertanda TB per akun (debit-kredit) cabang = perusahaan",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "(info) Σ kolom debit TB per cabang BOLEH berbeda dari perusahaan karena netting per akun",
+   "pass": true,
+   "detail": [
+    37779668231,
+    33427810999
+   ]
+  },
+  {
+   "name": "Σ perubahan kas cabang = perusahaan",
+   "pass": true
+  },
+  {
+   "name": "Σ saldo akhir buku besar akun teratas = perusahaan",
+   "pass": true
+  },
+  {
+   "name": "Σ jumlah jurnal cabang = total jurnal",
+   "pass": true
+  },
+  {
+   "name": "neraca seimbang: company",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:PUSAT",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:METRO",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:BL",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:KOTABUMI",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:PRINGSEWU",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:LIWA",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: branch:BALIK",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: selected:PUSAT+METRO",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "neraca seimbang: all",
+   "pass": true,
+   "detail": 0
+  },
+  {
+   "name": "gabungan semua cabang = perusahaan (aset, laba)",
+   "pass": true
+  }
+ ]
+}
